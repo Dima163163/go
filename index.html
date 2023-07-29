@@ -13,15 +13,15 @@
 	<title>Go</title>
 </head>
 <body>
-	<header>
+	<header class="headeer">
 		<figure>
-			<img src="img/logo.svg" alt="logo">
+			<img class="image" src="img/logo.svg" alt="logo">
 			<figcaption></figcaption>
 		</figure>
 		
 	</header>
-	<section>
-		<h2>Меню</h2>
+	<section class="menu">
+		<h2 class="title">Меню</h2>
 		<ul>
 			<li><a href="#halls">Залы</a></li>
 			<li><a href="#about">О нас</a></li>
@@ -30,8 +30,8 @@
 			<li><a href="#contacts">Контакты</a></li>
 		</ul>
 	</section>
-	<section>
-		<h2>У нас ксть все для классного отдыха с друзьями!</h2>
+	<section class="information">
+		<h2 class="title">У нас ксть все для классного отдыха с друзьями!</h2>
 		<ul>
 			<li><img src="img/vr.png" alt="vr" width="380" height="228"><br>VR очки</li>
 			<li><img src="img/audio.png" alt="audio" width="380" height="228"><br>Аудио-система 5.1 с отличным звуком</li>
@@ -42,8 +42,8 @@
 		</ul>
 	</section>
 
-	<section id="halls">
-		<h2>Наши залы</h2>
+	<section class="halls" id="halls">
+		<h2 class="title">Наши залы</h2>
 		<ol>
 			<li><a href="vibes.html">80's vibes</a></li>
 			<li><a href="starwars.html">Star wars</a></li>
@@ -51,22 +51,26 @@
 			<li><a href="neon.html">Neon style</a></li>
 		</ol>
 	</section>
-	<section>
-		<h2>Забронировать</h2>
+	<section class="reserve" id="reserve">
+		<h2 class="title">Забронировать</h2>
 		<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
 			<fieldset>
-				<input type="radio" name="halls" value="80's vibes">80's vibes
-				<input type="radio" name="halls" value="Star wars">Star wars
-				<input type="radio" name="halls" value="Wild west">Wild west
-				<input type="radio" name="halls" value="Neon style">Neon style
+				<legend>Выбери зал</legend>
+				<input type="submit" name="halls" value="80's vibes">
+				<input type="submit" name="halls" value="Star wars">
+				<input type="submit" name="halls" value="Wild west">
+				<input type="submit" name="halls" value="Neon style">
 			</fieldset>
 			<fieldset>
 				<legend>Собери набор развлечений</legend>
 				<fieldset>
 					<legend>Приставка:</legend>
 					<input type="radio" name="console" value="PlayStation">PlayStation
+					<br>
 					<input type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive
+					<br>
 					<input type="radio" name="console" value="X-Box One S">X-Box One S
+					<br>
 					<input type="radio" name="console" value="Dendy">Dendy
 				</fieldset>
 				<fieldset>
@@ -112,6 +116,10 @@
 				</label>
 				<br>
 				<br>
+				<label>Email*
+					<input type="email" name="email" required>
+				</label>
+				<br>
 				<label>
 					<input type="checkbox" name="age">Я старше 18 лет
 				</label>
@@ -121,8 +129,8 @@
 		</form>
 	</section>
 
-	<section id="about">
-		<h2>О нас</h2>
+	<section class="about" id="about">
+		<h2 class="title">О нас</h2>
 		<p>
 			Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.
 		</p>
@@ -133,8 +141,33 @@
 		<blockquote><cite>Аркадий Абакшин, созидатель игровой теории GAME OVER</cite></blockquote>
 	</section>
 
-	<section id="contacts">
-		<h2>Контакты</h2>
+	<section class="reviews" id="reviews">
+		<h2>Отзывы посетилелей</h2>
+		<div>
+			<figure>
+				<img src="img/maks.png" alt="maks">
+				<figcaption>Макс Самойлов</figcaption>
+			</figure>
+			<p>Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении.Серивис на высоте!</p>
+		</div>
+				<div>
+			<figure>
+				<img src="img/oksana.png" alt="oksana">
+				<figcaption>Оксана Григорьева</figcaption>
+			</figure>
+			<p>Были в комнате дикий запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.</p>
+		</div>
+				<div>
+			<figure>
+				<img src="img/nikita.png" alt="nikita">
+				<figcaption>Никита Ященко</figcaption>
+			</figure>
+			<p>Немного подвисала игра в vr очках, а так все норм. Кру тое оформление комнаты в стиле звездных воин, попал в атмосферу космоса.</p>
+		</div>
+	</section>
+
+	<section class="contacts" id="contacts">
+		<h2 class="title">Контакты</h2>
 		<address>г.Москва, ул.Аквамарина, 16</address>
 		<a href="tel:89509302893">8(950)930-28-93</a>
 		<br>
