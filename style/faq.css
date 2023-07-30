@@ -1,4 +1,8 @@
 .question {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
 	background-color: #fff;
 	color: #1C1A1A;
 	font-weight: 700;
@@ -7,7 +11,23 @@
 	margin-bottom: 20px;
 }
 
-.question__wrapper .question:nth-of-type(even) {
+.question:nth-of-type(even) {
 	background-color: #440F51;
 	color: #fff;
+}
+
+.question:nth-of-type(even):after {
+	content: '';
+	background-image: url('../img/open.svg');
+	background-size: contain;
+	width: 46px;
+	height: 46px;
+}
+
+.question:nth-of-type(odd):after {
+	content: '';
+	background-image: url('../img/open-purple.svg');
+	background-size: contain;
+	width: 46px;
+	height: 46px;
 }
