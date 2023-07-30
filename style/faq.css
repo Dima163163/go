@@ -16,7 +16,7 @@
 	color: #fff;
 }
 
-.question:nth-of-type(even):after {
+.question:nth-child(even):after {
 	content: '';
 	background-image: url('../img/open.svg');
 	background-size: contain;
@@ -24,7 +24,7 @@
 	height: 46px;
 }
 
-.question:nth-of-type(odd):after {
+.question:nth-child(odd):after {
 	content: '';
 	background-image: url('../img/open-purple.svg');
 	background-size: contain;
