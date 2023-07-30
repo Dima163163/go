@@ -1,0 +1,13 @@
+.question {
+	background-color: #fff;
+	color: #1C1A1A;
+	font-weight: 700;
+	font-size: 24px;
+	padding: 30px 70px;
+	margin-bottom: 20px;
+}
+
+.question__wrapper .question:nth-of-type(even) {
+	background-color: #440F51;
+	color: #fff;
+}
