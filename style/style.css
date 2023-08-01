@@ -34,7 +34,6 @@ blockquote {
 	display: block;
 	content: '';
 	background-image: url('../img/vr.png');
-	background-repeat: no-repeat;
 	width: 675px;
 	height: 762px;
 	bottom: 0;
