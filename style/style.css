@@ -26,9 +26,19 @@ blockquote {
 
 .game__over-block {
 	height: 823px;
+	position: relative;
+}
+
+.game__over-block::after {
+	position: absolute;
+	display: block;
+	content: '';
 	background-image: url('../img/vr.png');
-	background-position: 100% 100%;
 	background-repeat: no-repeat;
+	width: 675px;
+	height: 762px;
+	bottom: 0;
+	right: 0;
 }
 
 .game__over-title {
