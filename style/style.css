@@ -1,22 +1,7 @@
-*{
-	box-sizing: border-box;
-}
-
-body {
-	background-color: #1B1A1B;
-	color: #FFF;
-	font-family: "Arial", sans-serif;
-	font-weight: 400;
-	font-style: normal;
-}
-
-blockquote {
-	text-transform: uppercase;
-}
 
 .game__over {
-	margin-top: 146px;
-	margin-bottom: 100px;
+	padding-top: 146px;
+	padding-bottom: 50px;
 }
 
 .container {
@@ -41,12 +26,11 @@ blockquote {
 }
 
 .game__over-title {
-	font-size: 164px;
+	font-size: 155px;
 	font-weight: 900;
 	margin: 0;
 	letter-spacing: -15px;
 	line-height: 100%;
-	color: #FFF;
 	text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 	width: 883px;
 }
@@ -59,7 +43,7 @@ blockquote {
 }
 
 .section__block {
-	margin: 100px 0;
+	padding: 50px 0;
 }
 
 .block__content {
@@ -197,8 +181,8 @@ blockquote {
 }
 
 .footer {
-	margin-top: 100px;
-	margin-bottom: 51px;
+	padding-top: 50px;
+	padding-bottom: 51px;
 }
 
 .contacts__wrapper {
