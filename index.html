@@ -14,47 +14,47 @@
 	<title>Go</title>
 </head>
 <body>
-	<section class="game__over">
+	<header class="header">
 			<div class="container">
-				<div class="game__over-block">
-					<h1 class="title game__over-title">GAME OVER</h1>
-					<p class="game__over-text">Новый формат игр и отдыха</p>
+				<div class="header__wrapper">
+					<h1 class="header__title">GAME OVER</h1>
+					<p class="header__text">Новый формат игр и отдыха</p>
 				</div>
 			</div>
-	</section>
-	<section class="section__block section__halls" id="halls">
+	</header>
+	<section class="section halls" id="halls">
 			<div class="container">
-				<div class="block__content section__halls-block">
-					<h2 class="title block__title">Наши залы</h2>
-					<ul class="halls__list">
-						<li class="halls__item">
-							<a class="halls__link halls__link-vibes" href="vibes.html">
-								<h3 class="halls__link-title">80's vibes</h3>
+				<div class="content halls-content">
+					<h2 class="title halls-content__title">Наши залы</h2>
+					<ul class="halls-content__list">
+						<li class="halls-content__item">
+							<a class="halls-content__link halls-content__link-vibes" href="vibes.html">
+								<h3 class="halls-content__link-title">80's vibes</h3>
 							</a>
 						</li>
-						<li class="halls__item">
-							<a class="halls__link halls__link-star" href="starwars.html">
-								<h3 class="halls__link-title">Star wars</h3>
+						<li class="halls-content__item">
+							<a class="halls-content__link halls-content__link-star" href="starwars.html">
+								<h3 class="halls-content__link-title">Star wars</h3>
 							</a>
 						</li>
-						<li class="halls__item">
-							<a class="halls__link halls__link-wild" href="wildwest.html">
-								<h3 class="halls__link-title">Wild west</h3>
+						<li class="halls-content__item">
+							<a class="halls-content__link  halls-content__link-wild" href="wildwest.html">
+								<h3 class="halls-content__link-title">Wild west</h3>
 							</a>
 						</li>
-						<li class="halls__item">
-							<a class="halls__link halls__link-neon" href="neon.html">
-								<h3 class="halls__link-title">Neon style</h3>
+						<li class="halls-content__item">
+							<a class="halls-content__link  halls-content__link-neon" href="neon.html">
+								<h3 class="halls-content__link-title">Neon style</h3>
 							</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 	</section>
-	<section class="section__block section__reserve" id="reserve">
+	<section class="section reserve" id="reserve">
 			<div class="container">
-				<div class="block__content reserve__block">
-					<h2 class="title block__title">Забронировать</h2>
+				<div class="content reserve-content">
+					<h2 class="title reserve-content__title">Забронировать</h2>
 					<form action="https://jsonplaceholder.typicode.com/posts" method="POST">
 						<fieldset>
 							<input type="radio" name="halls" value="80's vibes">80's vibes
@@ -117,82 +117,89 @@
 				</div>
 			</div>
 	</section>
-	<section class="section__block section__about" id="about">
+	<section class="section about" id="about">
 			<div class="container">
-				<div class="block__content about__block">
-					<h2 class="title block__title">О нас</h2>
-					<div class="about__wrapper">
-						<p class="about__text about__text-first">
+				<div class="content about-content">
+					<h2 class="title about-content__title">О нас</h2>
+					<div class="about-content__wrapper">
+						<p class="about-content__text about-content__text-first">
 							Для наших гостей мы создали <i>концептуально новое игровое пространство виртуальной реальности</i> в центральной части города.
 						</p>
-						<p class="about__text">
+						<p class="about-content__text">
 							Каждый день мы стараемся создавать для вас самую лучшую игровую атмосферу и радовать Вас топовыми разработками со всего мира.
 						</p>
-						<div class="citate__wrapper">
-							<span class="quotes quotes__open">“</span>
-							<blockquote class="citate">GAME OVER  - <br> это место незабываемых впечатлений
+						<div class="citate">
+							<span class="citate__quotes citate__quotes-open">“</span>
+							<blockquote class="citate__autor">GAME OVER  - <br> это место незабываемых впечатлений
 							</blockquote>
-							<span class="quotes quotes__close">„</span>
+							<span class="citate__quotes citate__quotes-close">„</span>
 						</div>
 					</div>
 				</div>
-				<div class="creator__wrapper">
-					<div class="creator">
+				<div class="creator">
+					<div class="creator__wrapper">
 						<img class="creator__img" src="img/creator.png" alt="Создатель Game Over">
 						<cite class="creator__text">Аркадий Абакшин, созидатель игровой <br> территории GAME OVER</cite>
 				</div>
 				</div>
 			</div>
 	</section>
-	<section class="section__block section__question" id="question">
+	<section class="section question" id="question">
 			<div class="container">
-				<div class="block__content question__block">
-					<h2 class="title block__title">Частые вопросы</h2>
-					<ul class="question__list">
-						<li class="question__item">Можно ли забронировать комнату онлайн?</li>
-						<li class="question__item">Могут ли мне вернуть деньги за бронь?</li>
-						<li class="question__item">Какая комната самая популярная?</li>
-						<li class="question__item">Как получить VIP карту?</li>
-						<li class="question__item">Какая комната самая популярная?</li>
+				<div class="content question-content">
+					<h2 class="title question-content__title">Частые вопросы</h2>
+					<ul class="question-content__list">
+						<li class="question-content__item">Можно ли забронировать комнату онлайн?</li>
+						<li class="question-content__item">Могут ли мне вернуть деньги за бронь?</li>
+						<li class="question-content__item">Какая комната самая популярная?</li>
+						<li class="question-content__item">Как получить VIP карту?</li>
+						<li class="question-content__item">Какая комната самая популярная?</li>
 					</ul>
 				</div>
 			</div>
 	</section>
 	<footer class="footer" id="contacts">
 			<div class="container">
-				<div class="block__content contacts__block">
-					<h2 class="title block__title">Контакты</h2>
-					<div class="contacts__wrapper">
-						<div class="contact__wrapper address__wrapper">
-							<img class="contact__icon" src="img/location.svg" alt="Иконка адреса">
-							<address class="contact__address">г.Москва <br> ул.Аквамарина, 16</address>
+				<div class="content contacts-content">
+					<h2 class="title contacts-content__title">Контакты</h2>
+					<div class="contacts-content__wrapper">
+						<div class="contacts-content__item contacts-content__item-adress">
+							<img class="contacts-content__icon" src="img/location.svg" alt="Иконка адреса">
+							<address class="contacts-content__address">г.Москва <br> ул.Аквамарина, 16</address>
 						</div>
-						<div class="contact__wrapper tel__wrapper">
-							<img class="contact__icon" src="img/phone-call.svg" alt="Иконка телефон">
-							<a class="contact__link phone__link" href="tel:89509302893">8(950)930-28-93</a>
+						<div class="contacts-content__item contacts-content__item-tel">
+							<img class="contacts-content__icon" src="img/phone-call.svg" alt="Иконка телефон">
+							<a class="contacts-content__link contacts-content__link-phone" href="tel:89509302893">8(950)930-28-93</a>
 						</div>
-						<div class="contact__wrapper email__wrapper">
-							<img class="contact__icon" src="img/email.svg" alt="Иконка email">
-							<a class="contact__link email__link" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
+						<div class="contacts-content__item contacts-content__item-email">
+							<img class="contacts-content__icon" src="img/email.svg" alt="Иконка email">
+							<a class="contacts-content__link contacts-content__link-email" href="mailto:GameOver@gmail.com">GameOver@gmail.com</a>
 						</div>
-						<ul class="social__list">
-							<li><a href="https://vk.com">
-								<img class="social__icon" src="img/vk.svg" alt="В контакте">
-							</a></li>
-							<li><a href="https://web.telegram.org">
-								<img class="social__icon" src="img/tg.svg" alt="Телеграм">
-							</a></li>
-							<li><a href="https://web.telegram.org">
+						<ul class="social">
+							<li class="social__item">
+								<a class="social__link" href="https://vk.com">
+									<img class="social__icon" src="img/vk.svg" alt="В контакте">
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="https://web.telegram.org">
+									<img class="social__icon" src="img/tg.svg" alt="Телеграм">
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="https://web.telegram.org">
 									<img class="social__icon" src="img/pinter.svg" alt="Пинтер">
-							</a></li>
-							<li><a href="https://web.telegram.org">
-								<img class="social__icon" src="img/stumbleupon.svg" alt="Stumbleupon">
-							</a></li>
+								</a>
+							</li>
+							<li class="social__item">
+								<a class="social__link" href="https://web.telegram.org">
+									<img class="social__icon" src="img/stumbleupon.svg" alt="Stumbleupon">
+								</a>
+							</li>
 						</ul>
 					</div>
 				</div>
 			</div>
-			
 	</footer>
 </body>
 </html>

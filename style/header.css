@@ -1,19 +1,16 @@
-.game__over {
+.header {
 	padding-top: 146px;
 	padding-bottom: 50px;
 }
 
-.container {
-	max-width: 1180px;
-	margin: 0 auto;
-}
 
-.game__over-block {
+
+.header__wrapper {
 	height: 823px;
 	position: relative;
 }
 
-.game__over-block::after {
+.header__wrapper::after {
 	position: absolute;
 	display: block;
 	content: '';
@@ -24,7 +21,7 @@
 	right: 0;
 }
 
-.game__over-title {
+.header__title {
 	font-size: 155px;
 	font-weight: 900;
 	margin: 0;
@@ -34,7 +31,7 @@
 	width: 883px;
 }
 
-.game__over-text {
+.header__text {
 	font-size: 28px;
 	line-height: 50px;
 	margin: 0;

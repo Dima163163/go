@@ -1,35 +1,35 @@
-.contacts__wrapper {
+.contacts-content__wrapper {
 	width: 100%;
 }
 
-.contact__wrapper {
+.contacts-content__item {
 	display: flex;
 	align-items: center;
 	gap: 30px;
 	max-width: 415px;
 }
 
-.address__wrapper {
+.contacts-content__item-adress{
 	margin-bottom: 38px;
 }
 
-.tel__wrapper {
+.contacts-content__item-tel {
 	margin-bottom: 11px;
 }
 
-.contact__icon {
+.contacts-content__icon {
 	width: 35px;
 	height: 32px;
 }
 
-.contact__address {
+.contacts-content__address {
 	font-size: 24px;
 	font-weight: 700;
 	line-height: 28px;
 	font-style: normal;
 }
 
-.contact__link {
+.contacts-content__link  {
 	color: #FFF;
 	text-decoration: none;
 	font-size: 24px;

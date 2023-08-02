@@ -1,12 +1,12 @@
-.about__wrapper {
+.about-content {
 	width: 100%;
 }
 
-.about__text {
+.about-content__text {
 	font-size: 20px;
 	line-height: 28px; 
 }
 
-.about__text-first {
+.about-content__text-first {
 	padding-bottom: 30px;
 }
