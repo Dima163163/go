@@ -1,0 +1,16 @@
+.citate__wrapper {
+	display: flex;
+	padding-top: 78px;
+}
+
+.citate {
+	max-width: 1125px;
+	display: inline-block;
+	margin: 0;
+	padding: 0 16px;
+	color: #FFF;
+	font-size: 44px;
+	font-weight: 400;
+	line-height: 50px;
+	text-transform: uppercase;
+}

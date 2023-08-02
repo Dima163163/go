@@ -1,0 +1,42 @@
+.game__over {
+	padding-top: 146px;
+	padding-bottom: 50px;
+}
+
+.container {
+	max-width: 1180px;
+	margin: 0 auto;
+}
+
+.game__over-block {
+	height: 823px;
+	position: relative;
+}
+
+.game__over-block::after {
+	position: absolute;
+	display: block;
+	content: '';
+	background-image: url('../img/vr.png');
+	width: 675px;
+	height: 762px;
+	bottom: 0;
+	right: 0;
+}
+
+.game__over-title {
+	font-size: 155px;
+	font-weight: 900;
+	margin: 0;
+	letter-spacing: -15px;
+	line-height: 100%;
+	text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	width: 883px;
+}
+
+.game__over-text {
+	font-size: 28px;
+	line-height: 50px;
+	margin: 0;
+	padding-left: 100px;
+}

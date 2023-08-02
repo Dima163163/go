@@ -1,0 +1,25 @@
+.creator__wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: end;
+}
+
+.creator {
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
+	width: 389px;
+	height: 84px;
+}
+
+.creator__img {
+	display: block;
+}
+
+.creator__text {
+	display: block;
+	font-size: 20px;
+	font-style: normal;
+	line-height: 28px; 
+}

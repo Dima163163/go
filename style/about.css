@@ -1,0 +1,12 @@
+.about__wrapper {
+	width: 100%;
+}
+
+.about__text {
+	font-size: 20px;
+	line-height: 28px; 
+}
+
+.about__text-first {
+	padding-bottom: 30px;
+}
