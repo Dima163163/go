@@ -1,0 +1,118 @@
+.crm {
+	display: flex;
+	gap: 12px;
+	flex-direction: column;
+	padding: 28px;
+	background-color: #FFF;
+	border-radius: 15px;
+	border: none;
+	filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.20));
+}
+
+.crm-wrapper {
+	display: flex;
+  flex-direction: column;
+  border: none;
+	gap: 5px;
+	padding: 0;
+}
+
+.crm-wrapper__title {
+	color:  #6E6893;
+	font-family: Inter;
+	font-size: 12px;
+	font-weight: 600;
+	line-height: normal;
+	letter-spacing: 0.6px;
+	text-transform: uppercase;
+}
+
+.crm-wrapper__input {
+	background-color: #F4F2FF;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	min-height: 40px;
+}
+
+.crm-wrapper__textarea {
+	background-color: #F4F2FF;
+	border: none;
+	border-radius: 5px;
+	width: 100%;
+	min-height: 112px;
+	resize: none;
+}
+
+.crm__discont-wrapper {
+	display: flex;
+	border: none;
+	gap: 10px;
+	padding: 0;
+}
+
+.crm__checkbox {
+	position: relative;
+	display: block;
+	padding-left: 40px;
+}
+
+.crm__checkbox-input {
+	cursor: pointer;
+	appearance: none;
+}
+
+.crm__checkbox-input::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-color: #F4F2FF;
+	border-radius: 6px;
+}
+
+.crm__checkbox-input::after {
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: 10px;
+	width: 20px;
+	height: 15px;
+	border: 3px solid #000000;
+	border-top: none;
+	border-right: none;
+	opacity: 0;
+	transform: rotate(-45deg);
+}
+
+.crm__checkbox-input:checked::after {
+	opacity: 1;
+}
+
+.crm__discont-input:disabled {
+	background-color: #EEE;
+}
+
+.btn-wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+.btn {
+	background: #6D5BD0;
+	padding: 10px 25px;
+	border-radius: 6px;
+	color: #FFF;
+	font-family: Inter, sans-serif;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	line-height: normal;
+	text-transform: uppercase;
+	margin-top: 32px;
+	margin-right: 28px;
+}
+
