@@ -33,5 +33,9 @@
 }
 
 .about-content__text-first {
-	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.about-content__text-last {
+	margin-bottom: 59px;
 }
