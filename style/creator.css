@@ -1,11 +1,9 @@
 .creator {
 	display: flex;
-	flex-direction: row;
-	justify-content: end;
+
 }
 
 .creator__wrapper {
-	margin-top: 40px;
 	display: flex;
 	align-items: center;
 	gap: 30px;

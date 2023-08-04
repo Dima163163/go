@@ -1,18 +1,19 @@
 .citate {
 	display: flex;
-	padding-top: 78px;
+	padding-top: 59px;
 }
 
 .citate__autor {
 	max-width: 1125px;
 	display: inline-block;
 	margin: 0;
-	padding: 0 16px;
+	padding: 0 9px;
 	color: #FFF;
 	font-size: 44px;
 	font-weight: 400;
 	line-height: 50px;
 	text-transform: uppercase;
+	position: relative;
 }
 
 .citate__quotes {
@@ -24,5 +25,7 @@
 }
 
 .citate__quotes-close {
-	padding-top: 26px;
+	position: absolute;
+	bottom: 28px;
+	right: 118px;
 }

@@ -1,5 +1,30 @@
+.about__wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+	min-height: 596px;
+	align-items: center;
+}
+
+.about__info {
+	display: flex;
+	gap: 80px;
+	height: 100%;
+}
+
+.about__photo {
+	min-width: 600px;
+	min-height: 100%;
+}
+
+.about__photo-img {
+	min-height: 100%;
+}
+
 .about-content {
 	width: 100%;
+	gap: 30px;
+	align-items: end;
 }
 
 .about-content__text {
