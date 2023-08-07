@@ -1,39 +1,35 @@
 .header {
-	padding-top: 146px;
-	padding-bottom: 50px;
+	padding-top: 30px;
+	margin-bottom: 50px;
 }
-
-
 
 .header__wrapper {
-	height: 823px;
-	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 96px;
 }
 
-.header__wrapper::after {
-	position: absolute;
-	display: block;
-	content: '';
-	background-image: url('../img/vr.png');
-	width: 675px;
-	height: 762px;
-	bottom: 0;
-	right: 0;
+.navigation__list {
+	display: flex;
+	gap: 40px;
 }
 
-.header__title {
-	font-size: 155px;
-	font-weight: 900;
-	margin: 0;
-	letter-spacing: -15px;
-	line-height: 100%;
-	text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-	width: 883px;
-}
-
-.header__text {
-	font-size: 28px;
+.navigation__link {
+	font-size: 22px;
 	line-height: 50px;
-	margin: 0;
-	padding-left: 100px;
+	text-transform: uppercase;
 }
+
+.header__btn {
+	min-width: 280px;
+	max-height: 55px;
+	padding: 12px 32px;
+	line-height: 30px;
+	border: 3px solid #CD06FF;
+	border-radius: 10px;
+	font-size: 22px;
+	text-transform: uppercase;
+	color: #FFF;
+}
+

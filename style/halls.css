@@ -3,8 +3,8 @@
 	padding: 0;
 	margin: 0;
 	display: flex;
-	flex-direction: column;
-	gap: 60px;
+	flex-wrap: wrap;
+	gap: 20px;
 	list-style: none;
 }
 
@@ -15,8 +15,8 @@
 	text-decoration: none;
 	color: #FFF;
 	background-size: cover;
-	width: 100%;
-	min-height: 710px;
+	min-width: 580px;
+	min-height: 349px;
 }
 
 .halls-content__link_vibes {

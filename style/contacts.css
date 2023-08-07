@@ -1,4 +1,6 @@
 .contacts-content__wrapper {
+	display: flex;
+	justify-content: space-between;
 	width: 100%;
 }
 
@@ -31,4 +33,25 @@
 	font-weight: 700;
 	line-height: 28px;
 	font-style: normal;
+}
+
+.contacts-content__map {
+	min-width: 680px;
+	min-height: 274px;
+}
+
+.contacts-content__bottom {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.contacts-content__coopyright {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.contacts-content__developer-link {
+	font-size: 14px;
+	line-height: 16px;
 }

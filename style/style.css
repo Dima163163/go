@@ -1,7 +1,7 @@
 @import 'normalize.css';
 @import 'global-style.css';
 @import 'header.css';
-@import 'container.css';
+@import 'game-over.css';
 @import 'section.css';
 @import 'content.css';
 @import 'title.css';
@@ -14,5 +14,7 @@
 @import 'social.css';
 @import 'faq.css';
 @import 'reviews.css';
+@import 'description.css';
+@import 'reserve.css';
 
 

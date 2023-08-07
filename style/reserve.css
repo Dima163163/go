@@ -1,0 +1,240 @@
+.reserve {
+	background-color: #440F51;
+	padding: 80px 0;
+	margin-bottom: 50px;
+}
+
+.reserve-hall {
+	border: none;
+	margin-bottom: 40px;
+}
+
+.reserve-hall__wrapper {
+	display: flex;
+	gap: 60px;
+	border: none;
+}
+
+.reserve__title {
+	text-align: start;
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	margin-bottom: 24px;
+}
+
+.reserve-hall__title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.reserve-hall__input {
+	min-width: 250px;
+	max-height: 55px;
+	padding: 7px 15px;
+	color: #000;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 40px;
+	text-transform: uppercase;
+	border-radius: 8px;
+}
+
+.reserve-games {
+	margin-bottom: 67px;
+}
+
+.reserve__wrapper {
+	display: flex;
+	flex-direction: column;
+	min-width: 280px;
+}
+
+.reserve-games__title {
+	margin-bottom: 24px;
+}
+
+.reserve-games__wrapper {
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+
+.reserve__wrapper {
+	display: flex;
+	gap: 20px;
+}
+
+.reserve-games__consoles-title {
+	margin-bottom: 24px;
+}
+
+.reserve-games__title {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.reserve-games__inner {
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+}
+
+.reserve-games__console {
+	margin-right: 12px;
+	width: 27px;
+	height: 27px;
+}
+
+
+.reserve-boardgame__inner {
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+}
+
+.reserve-boardgame {
+	margin-right: 12px;
+	width: 25px;
+	height: 25px;
+}
+
+.reserve-add__inner {
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+}
+
+.reserve-other__inner {
+	display: flex;
+	align-items: center;
+	font-size: 22px;
+}
+
+.reserve-boardgame__input,
+.reserve-other {
+	margin-right: 12px;
+	width: 27px;
+	height: 27px;
+}
+
+.reserve-time__title {
+	text-align: center;
+	margin-bottom: 38px;
+}
+
+.reserve__container {
+	max-width: 980px;
+	margin: 0 auto;
+}
+
+.reserve-time__wrapper {
+	display: flex;
+	gap: 50px;
+	justify-content: space-between;
+	align-items: flex-end;
+	margin-bottom: 14px;
+}
+
+.reserve-time__wrapper-bottom {
+	margin-bottom: 40px;
+}
+
+.reserve-time__inner {
+	display: flex;
+	gap: 32px;
+}
+
+.reserve-time__inner-time,
+.reserve-time__inner-date {
+	height: 52px;
+	position: relative;
+	display: inline-block;
+}
+
+.reserve-time__input,
+.reserve-time__count-input {
+	appearance: none;
+	display: inline-block;
+	width: 134px;
+	height: 52px;
+	padding: 12px 20px;
+}
+
+.reserve-time__input::placeholder {
+	color: #211E1E;
+	font-size: 18px;
+}
+
+.reserve-time__inner-time {
+	position: relative;
+}
+
+.reserve-time__img {
+	position: absolute;
+	top: 19px;
+	right: 27px;
+}
+
+.reserve-time__wrapper-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.reserve-time__inner-info {
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
+
+.reserve-time__name-input,
+.reserve-time__surname-input{
+	width: 280px;
+}
+
+.reserve-time__phone-input,
+.reserve-time__email-input {
+	width: 300px;
+}
+
+.reserve-time__count-input {
+	appearance: none;
+	width: 300px;
+	display: inline-block;
+	height: 52px;
+	padding: 12px 20px;
+}
+
+.reserve-time__naming {
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 16px;
+}
+
+.reserve-time__count {
+	position: relative;
+}
+
+.reserve__count-img {
+	position: absolute;
+	top: 18px;
+	right: 27px;
+}
+
+.reserve__btn-wrapper {
+	display: flex;
+	justify-content: end;
+}
+
+.reserve__btn {
+	min-width: 300px;
+	height: 60px;
+	border-radius: 10px;
+	background-color: #FFF;
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 28px;
+	padding: 16px 50px;
+}

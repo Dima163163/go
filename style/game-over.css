@@ -1,0 +1,105 @@
+.game-over {
+	margin-bottom: 100px;
+}
+
+.game-over__wrapper {
+	height: 823px;
+	position: relative;
+}
+
+.game-over__wrapper::after {
+	position: absolute;
+	display: block;
+	content: '';
+	background-image: url('../img/go.png');
+	width: 675px;
+	height: 762px;
+	bottom: 0;
+	right: 0;
+}
+
+.game-over__title {
+	font-size: 155px;
+	font-weight: 900;
+	margin: 0;
+	letter-spacing: -15px;
+	line-height: 100%;
+	text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+	width: 883px;
+}
+
+.game-over__text {
+	font-size: 28px;
+	line-height: 50px;
+	margin: 0;
+	padding-left: 100px;
+	margin-bottom: 65px;
+}
+
+.game-over__info {
+	display: flex;
+	gap: 40px;
+	min-height: 174px;
+}
+
+.game-over__info-wrapper {
+	display: flex;
+  text-align: center;
+  max-width: 193px;
+  min-height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.game-over__info {
+	margin-bottom: 150px;
+}
+
+.game-over__info-color {
+	color: #CD06FF;
+	font-weight: 900;
+	line-height: normal;
+	text-transform: uppercase;
+}
+
+.game-over__info-number {
+	font-size: 100px;
+}
+
+.game-over__info-text {
+	text-align: center;
+	font-size: 30px;
+	line-height: normal;
+}
+
+.game-over__info-new {
+	font-size: 75px;
+	font-variant: all-small-caps;
+	line-height: normal;
+}
+
+.game-over__btn-wrapper {
+	display: flex;
+}
+
+.game-over__btn {
+	padding: 25px 69px;
+	max-width: 374px;
+	max-height: 80px;
+	border-radius: 10px;
+	background: #6C0287;
+	color: #FFF;
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 30px;
+	text-transform: uppercase;
+	margin-right: 165px;
+}
+
+.game-over__btn-down {
+	width: 97px;
+	height: 97px;
+	flex-shrink: 0;
+	z-index: 4;
+	padding-top: 47px;
+}
