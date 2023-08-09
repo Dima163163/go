@@ -79,11 +79,6 @@
 						<div class="game-over__btn-wrapper">
 							<button class="game-over__btn">Забронировать</button>
 							<a href="#description" class="game-over__btn-down">
-								<svg width="97" height="97" viewBox="0 0 97 97" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<circle cx="48.5" cy="48.5" r="48" stroke="white"/>
-									<rect x="34.4255" y="43.9162" width="1.82001" height="20.0201" transform="rotate(-44.9975 34.4255 43.9162)" fill="white"/>
-									<rect x="48.5807" y="58.0737" width="1.82001" height="20.0201" transform="rotate(-134.997 48.5807 58.0737)" fill="white"/>
-								</svg>
 							</a>
 						</div>
 					</div>
@@ -155,10 +150,10 @@
 							<fieldset class="reserve-hall">
 								<legend class="reserve__title reserve-hall__title">Выберите зал</legend>
 								<fieldset class="reserve-hall__wrapper">
-									<input class="reserve-hall__input" type="submit" name="halls" value="80's vibes">
-									<input class="reserve-hall__input" type="submit" name="halls" value="Star wars">
-									<input class="reserve-hall__input" type="submit" name="halls" value="Wild west">
-									<input class="reserve-hall__input" type="submit" name="halls" value="Neon style">
+									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="80's vibes">
+									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="Star wars">
+									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="Wild west">
+									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="Neon style">
 								</fieldset>
 							</fieldset>
 							<fieldset class="reserve-games">
@@ -166,45 +161,75 @@
 								<fieldset class="reserve-games__wrapper">
 									<fieldset class="reserve__wrapper reserve-consoles">
 										<legend class="reserve__title reserve-games__consoles-title">Приставка:</legend>
-										<label class="reserve-games__inner">
-											<input class="reserve-games__console" type="radio" name="console" value="PlayStation">PlayStation
-										</label>
-										<label class="reserve-games__inner">
-											<input class="reserve-games__console" type="radio" name="console" value="Sega Mega Drive">Sega Mega Drive
-										</label>
-										<label class="reserve-games__inner">
-											<input class="reserve-games__console" type="radio" name="console" value="X-Box One S">X-Box One S
-										</label>
-										<label class="reserve-games__inner">
-											<input class="reserve-games__console" type="radio" name="console" value="Dendy">Dendy
-										</label>
+										<fieldset class="reserve-consoles__radio">
+											<input class="reserve-games__console" type="radio" name="console" id="playstation" value="PlayStation">
+											<label class="reserve-games__inner" for="playstation">
+												PlayStation
+											</label>
+										</fieldset>
+										<fieldset class="reserve-consoles__radio">
+											<input class="reserve-games__console" type="radio" name="console" id="sega-mega-drive" value="Sega Mega Drive">
+											<label class="reserve-games__inner" for="sega-mega-drive">
+												Sega Mega Drive
+											</label>
+										</fieldset>
+										<fieldset class="reserve-consoles__radio">
+											<input class="reserve-games__console" type="radio" name="console" id="x-box-one" value="X-Box One S">
+											<label class="reserve-games__inner" for="x-box-one">
+												X-Box One S
+											</label>
+										</fieldset>
+										<fieldset class="reserve-consoles__radio">
+											<input class="reserve-games__console" type="radio" name="console" id="dendy" value="Dendy">
+											<label class="reserve-games__inner" for="dendy">
+												Dendy
+											</label>
+										</fieldset>
 									</fieldset>
 									<fieldset class="reserve-boardgames">
 										<legend class="reserve__title  reserve-boardgames__title">Настольные игры:</legend>
 										<fieldset class="reserve__wrapper reserve-boardgame">
-											<label class="reserve-boardgame__inner">
-												<input class="reserve-boardgame__input" type="checkbox" name="games" value="Jenga">Jenga
-											</label>
-											<label class="reserve-boardgame__inner">
-												<input class="reserve-boardgame__input" type="checkbox" name="games" value="Monopoly">Monopoly
-											</label>
-											<label class="reserve-boardgame__inner">
-												<input class="reserve-boardgame__input" type="checkbox" name="games" value="Манчкин">Манчкин
-											</label>
-											<label class="reserve-boardgame__inner">
-												<input class="reserve-boardgame__input" type="checkbox" name="games" value="Alias">Alias
-											</label>
+											<fieldset class="reserve-boardgame__checkbox">
+												<input class="reserve-boardgame__input" type="checkbox" name="games" id="jenga" value="Jenga">
+												<label class="reserve-boardgame__inner" for="jenga">
+													Jenga
+												</label>
+											</fieldset>
+											<fieldset class="reserve-boardgame__checkbox">
+												<input class="reserve-boardgame__input" id="monopoly" type="checkbox" name="games" value="Monopoly">
+												<label class="reserve-boardgame__inner" for="monopoly">
+													Monopoly
+												</label>
+											</fieldset>
+											<fieldset class="reserve-boardgame__checkbox">
+												<input class="reserve-boardgame__input" id="manchkin" type="checkbox" name="games" value="Манчкин">
+												<label class="reserve-boardgame__inner" for="manchkin">
+													Манчкин
+												</label>
+											</fieldset>
+											<fieldset class="reserve-boardgame__checkbox">
+												<input class="reserve-boardgame__input" type="checkbox" id="alias" name="games" value="Alias">
+												<label class="reserve-boardgame__inner" for="alias">
+													Alias
+												</label>
+											</fieldset>
 										</fieldset>
 									</fieldset>
 									<fieldset class="reserve__wrapper reserve-others">
 										<legend class="reserve__title reserve-others__title">Дополнительно:</legend>
 										<fieldset class="reserve__wrapper reserve-other">
-											<label class="reserve-other__inner">
-												<input class="reserve-other" type="checkbox" name="extra" value="Караоке">Караоке
-											</label>
-											<label class="reserve-other__inner">
-												<input class="reserve-other" type="checkbox" name="extra" value="VR">VR
-											</label>
+											<fieldset class="reserve-other__checkbox">
+												<input class="reserve-other__input" type="checkbox" name="extra" value="Караоке" id="karaoke">
+												<label class="reserve-other__inner" for="karaoke">
+													Караоке
+												</label>
+											</fieldset>
+											<fieldset class="reserve-other__checkbox">
+												<input class="reserve-other__input" type="checkbox" name="extra" value="VR" id="vr">
+												<label class="reserve-other__inner" for="vr">
+													VR
+												</label>
+											</fieldset>
 										</fieldset>
 									</fieldset>
 								</fieldset>
@@ -333,11 +358,21 @@
 					<div class="content question-content">
 						<h2 class="title question-content__title">Частые вопросы</h2>
 						<ul class="question-content__list">
-							<li class="question-content__item">Можно ли забронировать комнату онлайн?</li>
-							<li class="question-content__item">Могут ли мне вернуть деньги за бронь?</li>
-							<li class="question-content__item">Какая комната самая популярная?</li>
-							<li class="question-content__item">Как получить VIP карту?</li>
-							<li class="question-content__item">Какая комната самая популярная?</li>
+							<li class="question-content__item">
+								Можно ли забронировать комнату онлайн?
+							</li>
+							<li class="question-content__item">
+								Могут ли мне вернуть деньги за бронь?
+							</li>
+							<li class="question-content__item">
+								Какая комната самая популярная?
+							</li>
+							<li class="question-content__item">
+								Как получить VIP карту?
+							</li>
+							<li class="question-content__item">
+								Какая комната самая популярная?
+							</li>
 						</ul>
 					</div>
 				</div>

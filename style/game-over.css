@@ -95,6 +95,18 @@
 	text-transform: uppercase;
 }
 
+.game-over__btn:hover {
+	background-color: #840AA3;
+}
+
+.game-over__btn:focus{
+	background-color: #840AA3;
+}
+
+.game-over__btn:active {
+	background-color: #640AA3;
+}
+
 .game-over__btn-down {
 	width: 97px;
 	height: 97px;
@@ -102,4 +114,20 @@
 	position: absolute;
 	right: 544px;
 	bottom: 90px;
+	background-image: url('../img/btn-down.svg');
+	background-repeat: no-repeat;
+	background-color: transparent;
 }
+
+.game-over__btn-down:hover {
+	background-image: url('../img/down-white.svg');
+}
+
+.game-over__btn-down:active {
+	background-image: url('../img/btn-down.svg');
+}
+
+.game-over__btn-down:active {
+	background-image: url('../img/down-active.svg');
+}
+

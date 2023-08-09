@@ -7,7 +7,6 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	gap: 96px;
 }
 
 .navigation__list {
@@ -31,5 +30,20 @@
 	font-size: 22px;
 	text-transform: uppercase;
 	color: #FFF;
+	font-weight: 700;
+	font-style: normal;
 }
 
+.header__btn:hover {
+	background-color: #6C0287;
+	border: 3px solid #6C0287;
+}
+
+.header__btn:focus{
+	background-color: #6C0287;
+}
+
+.header__btn:active {
+	background-color: #640AA3;
+	border: 3px solid #000;
+}

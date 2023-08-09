@@ -28,8 +28,9 @@
 	margin-bottom: 40px;
 }
 
-.reserve-hall__input {
-	min-width: 250px;
+.reserve-btn {
+	flex-basis: 250px;
+	flex-shrink: 0;
 	max-height: 55px;
 	padding: 7px 15px;
 	color: #000;
@@ -39,6 +40,26 @@
 	line-height: 40px;
 	text-transform: uppercase;
 	border-radius: 8px;
+}
+
+.reserve-btn:hover {
+	border: 3px solid #640AA3;
+	background: #EDDEED;
+	padding: 4px 12px;
+}
+
+.reserve-btn:focus {
+	color: #000;
+	border: 3px solid #640AA3;
+	background: #FFF;
+	padding: 4px 12px;
+}
+
+.reserve-btn:active {
+	border: 3px solid #FFF;
+	background-color: #6C0287;
+	color: #FFF;
+	padding: 4px 12px;
 }
 
 .reserve-games {
@@ -81,12 +102,62 @@
 	font-size: 22px;
 }
 
-.reserve-games__console {
-	margin-right: 12px;
-	width: 27px;
-	height: 27px;
+.reserve-consoles__radio {
+	position: relative;
 }
 
+.reserve-games__console {
+	appearance: none;
+	position: absolute;
+}
+
+.reserve-games__inner {
+	cursor: pointer;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding-left: 39px;
+}
+
+.reserve-games__inner::before {
+	content: '';
+	display: block;
+	width: 27px;
+	height: 27px;
+	background-color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.reserve-games__inner::after {
+	content: '';
+	display: block;
+	width: 21px;
+	height: 21px;
+	background-color: #CD06FF;
+	border-radius: 50%;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 3;
+	opacity: 0;
+}
+
+.reserve-games__console:checked + .reserve-games__inner::after {
+	opacity: 1;
+}
+
+.reserve-games__console:focus {
+	border: 1px solid #CD06FF;
+	width: 33px;
+	height: 33px;
+	top: -3px;
+	left: -3px;
+}
 
 .reserve-boardgame__inner {
 	display: flex;
@@ -112,12 +183,75 @@
 	font-size: 22px;
 }
 
-.reserve-boardgame__input,
+/* .reserve-boardgame__input,
 .reserve-other {
 	margin-right: 12px;
 	width: 27px;
 	height: 27px;
+} */
+.reserve-boardgame__checkbox,
+.reserve-other__checkbox {
+	position: relative;
 }
+
+.reserve-boardgame__input,
+.reserve-other__input {
+	appearance: none;
+	position: absolute;
+}
+
+.reserve-boardgame__inner,
+.reserve-other__inner {
+	cursor: pointer;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	padding-left: 39px;
+}
+
+.reserve-boardgame__inner::before,
+.reserve-other__inner::before {
+	content: '';
+	display: block;
+	width: 27px;
+	height: 27px;
+	background-color: #FFF;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.reserve-boardgame__inner::after,
+.reserve-other__inner::after {
+	content: '';
+	display: block;
+	width: 22px;
+	height: 27px;
+	background: url('../img/checked.svg');
+	background-repeat: no-repeat;
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	z-index: 3;
+	opacity: 0;
+}
+
+.reserve-boardgame__input:checked + .reserve-boardgame__inner::after,
+.reserve-other__input:checked + .reserve-other__inner::after {
+	opacity: 1;
+}
+
+.reserve-boardgame__input:focus,
+.reserve-other__input:focus {
+	border: 1px solid #CD06FF;
+	width: 33px;
+	height: 33px;
+	top: -3px;
+	left: -3px;
+}
+
 
 .reserve-time__title {
 	text-align: center;
@@ -160,6 +294,11 @@
 	width: 134px;
 	height: 52px;
 	padding: 12px 20px;
+}
+
+.reserve-time__input:focus {
+	outline: none;
+	border: 2px solid #CD06FF;
 }
 
 .reserve-time__input::placeholder {
@@ -238,3 +377,20 @@
 	line-height: 28px;
 	padding: 16px 50px;
 }
+
+.reserve__btn:hover {
+	border: 3px solid #6C0287;
+	padding: 13px 47px;
+	background: #EADEED;
+}
+
+.reserve__btn:focus {
+	background: #EADEED;
+}
+
+.reserve__btn:active {
+	border: 3px solid #6C0287;
+	background: #FFF;
+	padding: 13px 47px;
+}
+
