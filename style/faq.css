@@ -31,6 +31,9 @@
 	width: 46px;
 	height: 46px;
 	cursor: pointer;
+	border-radius: 50%;
+	transition-property: all;
+	transition-duration: 0.2s;
 }
 
 .question-content__item:nth-of-type(even)::after {

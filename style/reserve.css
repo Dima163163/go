@@ -40,6 +40,8 @@
 	line-height: 40px;
 	text-transform: uppercase;
 	border-radius: 8px;
+	transition-property: all;
+	transition-duration: 0.2s;
 }
 
 .reserve-btn:hover {

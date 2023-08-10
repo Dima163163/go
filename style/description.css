@@ -11,9 +11,14 @@
 }
 
 .description__card {
-	width: 380px;
+	flex-basis: 380px;
 	min-height: 228px;
 	padding: 166px 40px 6px ;
+	transition: transform, 0.2s;
+}
+
+.description__card:hover {
+	transform: scale(1.1 , 1.1);
 }
 
 .description__card-vr {

@@ -27,7 +27,7 @@ img {
 
 svg {
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 button {
@@ -35,6 +35,8 @@ button {
   cursor: pointer;
   border: none;
   background-color: transparent;
+	transition-duration: 0.2s;
+	transition-property: all;
 }
 
 a {
