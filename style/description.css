@@ -31,28 +31,34 @@
 
 .description__card-vr {
 	background: url('../img/vr.png');
+	background-repeat: no-repeat;
 }
 
 .description__card-audio {
 	background: url('../img/audio.png');
+	background-repeat: no-repeat;
 	transform: translateY(70px);
 }
 
 .description__card-karaoke {
 	background: url('../img/karaoke.png');
+	background-repeat: no-repeat;
 }
 
 .description__card-games {
 	background: url('../img/board-games.png');
+	background-repeat: no-repeat;
 }
 
 .description__card-netflix {
 	background: url('../img/netflix.png');
+	background-repeat: no-repeat;
 	transform: translateY(70px);
 }
 
 .description__card-ps {
 	background: url('../img/ps5.png');
+	background-repeat: no-repeat;
 }
 
 .description__link {
