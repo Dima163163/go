@@ -24,11 +24,6 @@
 	transition: transform, 0.2s;
 }
 
-
-.description__card:hover {
-	transform: scale(1.1 , 1.1);
-}
-
 .description__card-vr {
 	background: url('../img/vr.png');
 	background-repeat: no-repeat;
@@ -59,6 +54,15 @@
 .description__card-ps {
 	background: url('../img/ps5.png');
 	background-repeat: no-repeat;
+}
+
+.description__card:hover {
+	transform: scale(1.1, 1.1);
+}
+
+.description__card-audio:hover,
+.description__card-netflix:hover {
+	transform: translateY(70px) scale(1.1 , 1.1);
 }
 
 .description__link {
