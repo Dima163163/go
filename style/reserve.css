@@ -1,5 +1,5 @@
 .reserve {
-	background-color: #440F51;
+	background-color: var(--dark-purple);
 	padding: 80px 0;
 	margin-bottom: 50px;
 }
@@ -33,7 +33,7 @@
 	flex-shrink: 0;
 	max-height: 55px;
 	padding: 7px 15px;
-	color: #000;
+	color: var(--black);
 	text-align: center;
 	font-size: 30px;
 	font-weight: 700;
@@ -45,22 +45,22 @@
 }
 
 .reserve-btn:hover {
-	border: 3px solid #640AA3;
-	background: #EDDEED;
+	border: 3px solid var(--light-purple);
+	background: var(--grey);
 	padding: 4px 12px;
 }
 
 .reserve-btn:focus {
-	color: #000;
-	border: 3px solid #640AA3;
-	background: #FFF;
+	color: var(--black);
+	border: 3px solid var(--light-purple);
+	background: var(--color-white);
 	padding: 4px 12px;
 }
 
 .reserve-btn:active {
-	border: 3px solid #FFF;
-	background-color: #6C0287;
-	color: #FFF;
+	border: 3px solid var(--color-white);
+	background-color: var(--violet-color);
+	color: var(--color-white);
 	padding: 4px 12px;
 }
 
@@ -127,7 +127,7 @@
 	display: block;
 	width: 27px;
 	height: 27px;
-	background-color: #FFF;
+	background-color: var(--color-white);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -140,7 +140,7 @@
 	display: block;
 	width: 21px;
 	height: 21px;
-	background-color: #CD06FF;
+	background-color: var(--pink-color);
 	border-radius: 50%;
 	position: absolute;
 	top: 3px;
@@ -154,7 +154,7 @@
 }
 
 .reserve-games__console:focus {
-	border: 1px solid #CD06FF;
+	border: 1px solid var(--pink-color);
 	width: 33px;
 	height: 33px;
 	top: -3px;
@@ -185,12 +185,6 @@
 	font-size: 22px;
 }
 
-/* .reserve-boardgame__input,
-.reserve-other {
-	margin-right: 12px;
-	width: 27px;
-	height: 27px;
-} */
 .reserve-boardgame__checkbox,
 .reserve-other__checkbox {
 	position: relative;
@@ -218,7 +212,7 @@
 	display: block;
 	width: 27px;
 	height: 27px;
-	background-color: #FFF;
+	background-color: var(--color-white);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -247,7 +241,7 @@
 
 .reserve-boardgame__input:focus,
 .reserve-other__input:focus {
-	border: 1px solid #CD06FF;
+	border: 1px solid var(--pink-color);
 	width: 33px;
 	height: 33px;
 	top: -3px;
@@ -300,11 +294,11 @@
 
 .reserve-time__input:focus {
 	outline: none;
-	border: 2px solid #CD06FF;
+	border: 2px solid var(--pink-color);
 }
 
 .reserve-time__input::placeholder {
-	color: #211E1E;
+	color: var(--black-grey);
 	font-size: 18px;
 }
 
@@ -314,7 +308,6 @@
 
 .reserve-time__img {
 	position: absolute;
-	top: 19px;
 	right: 27px;
 }
 
@@ -359,7 +352,6 @@
 
 .reserve__count-img {
 	position: absolute;
-	top: 18px;
 	right: 27px;
 }
 
@@ -372,7 +364,7 @@
 	min-width: 300px;
 	height: 60px;
 	border-radius: 10px;
-	background-color: #FFF;
+	background-color: var(--color-white);
 	font-size: 22px;
 	text-transform: uppercase;
 	font-weight: 700;
@@ -381,18 +373,18 @@
 }
 
 .reserve__btn:hover {
-	border: 3px solid #6C0287;
+	border: 3px solid var(--violet-color);
 	padding: 13px 47px;
-	background: #EADEED;
+	background: var(--grey);
 }
 
 .reserve__btn:focus {
-	background: #EADEED;
+	background: var(--grey);
 }
 
 .reserve__btn:active {
-	border: 3px solid #6C0287;
-	background: #FFF;
+	border: 3px solid var(--violet-color);
+	background: var(--color-white);
 	padding: 13px 47px;
 }
 

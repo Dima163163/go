@@ -10,8 +10,8 @@ html {
 }
 
 body {
-	background-color: #1B1A1B;
-	color: #FFF;
+	background-color: var(--dark);
+	color: var(--color-white);
 	font-weight: 400;
 	font-style: normal;
   min-width: 320px;

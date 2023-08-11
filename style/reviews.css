@@ -14,12 +14,25 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 11px;
+	border-radius: 140px;
 }
 
 .reviews__inner-img {
 	min-width: 280px;
 	min-height: 280px;
-	border-radius: 280px;
+	border-radius: 140px;
+}
+
+.reviews__inner-img_maks {
+	background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/maks.png);
+}
+
+.reviews__inner-img_oksana {
+	background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/oksana.png);
+}
+
+.reviews__inner-img_nikita {
+		background-image: radial-gradient(50% 50.00% at 50% 50.00%, rgba(196, 196, 196, 0.00) 0%, rgba(108, 2, 135, 0.50) 100%), url(../img/nikita.png);
 }
 
 .reviews__inner-name {

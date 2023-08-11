@@ -96,15 +96,15 @@
 }
 
 .game-over__btn:hover {
-	background-color: #840AA3;
+	background-color: var(--purple-saturated);
 }
 
 .game-over__btn:focus{
-	background-color: #840AA3;
+	background-color: var(--purple-saturated);
 }
 
 .game-over__btn:active {
-	background-color: #640AA3;
+	background-color: var(--light-purple);
 }
 
 .game-over__btn-down {
