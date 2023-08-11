@@ -9,7 +9,7 @@
 	display: block;
 	height: 50px;
 	width: 50px;
-	color: var(--color-white);
+	color: var(--color-white, #FFF);
 	outline: 1px solid transparent;
 	outline-offset: 3px;
 	border-radius: 50%;
@@ -29,13 +29,13 @@
 }
 
 .social__link:hover {
-	color: var(--pink-color);
+	color: var(--pink-color, #CD06FF);
 }
 
 .social__link:focus {
-	outline-color: var(--pink-color);
+	outline-color: var(--pink-color, #CD06FF);
 }
 
 .social__link:active {
-	color: var(--purple-saturated);
+	color: var(--purple-saturated, #840AA3);
 }

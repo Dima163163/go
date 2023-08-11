@@ -43,12 +43,12 @@
 
 .question-content__item:hover::after {
 	background-image: url('../img/open.svg');
-	background-color: var(--dark-purple);
+	background-color: var(--dark-purple, #440F51);
 	border-radius: 50%;
 }
 
 .question-content__item:nth-of-type(even):hover::after {
-	background-color: var(--color-white);
+	background-color: var(--color-white, #FFF);
 	background-image: url('../img/open-purple.svg');
 }
 
