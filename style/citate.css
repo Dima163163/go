@@ -1,12 +1,13 @@
 .citate {
-	display: flex;
+	display: inline-flex;
+	margin-bottom: 39px;
+	max-width: 444px;
 }
 
 .citate__autor {
 	max-width: 1125px;
 	display: inline-block;
 	margin: 0;
-	padding: 0 9px;
 	color: var(--color-white, #FFF);
 	font-size: 44px;
 	font-weight: 400;
@@ -26,5 +27,42 @@
 .citate__quotes-close {
 	position: absolute;
 	bottom: 28px;
-	right: 118px;
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		font-size: 30px;
+		line-height: 36px;
+		max-width: 86%;
+	}
+
+	.citate__quotes {
+		font-size: 30px;
+		line-height: 36px;
+	}
+
+	.citate__quotes-close {
+    bottom: 18px;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.citate {
+		min-width: 100%;
+		margin-bottom: 16px;
+	}
+
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		max-width: 100%;
+		font-size: 32px;
+		line-height: 36px;
+	}
 }

@@ -59,3 +59,29 @@
 .question-content__item:nth-of-type(even):active::after {
 	background-image: url('../img/close-purple.svg');
 }
+
+
+@media (max-width: 1439px) and (min-width: 768px) {
+	.question-content__item:nth-of-type(even) {
+		background-color: var(--color-white);
+		color: var(--dark-light);
+	}
+
+	.question-content__item:nth-of-type(even)::after {
+			background-image: url('../img/open-purple.svg');
+	}
+
+	.question-content__item:last-child {
+		display: none;
+	}
+
+	.question-content__item:nth-of-type(even):hover::after {
+		background-image: url('../img/open.svg');
+		background-color: var(--dark-purple, #440F51);
+		border-radius: 50%;
+	}
+
+	.question-content__item:nth-of-type(even):active::after {
+		background-image: url('../img/close.svg');
+	}
+}

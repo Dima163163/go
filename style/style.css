@@ -2,6 +2,7 @@
 @import 'normalize.css';
 @import 'global-style.css';
 @import 'header.css';
+@import 'navigation.css';
 @import 'game-over.css';
 @import 'section.css';
 @import 'content.css';

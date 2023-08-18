@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -83,8 +84,8 @@ iframe {
 */
 
 .container {
-  max-width: 1240px;
-  padding: 0 30px;
+  max-width: 1440px;
+  padding: 0 130px;
   margin: 0 auto;
 }
 
@@ -92,4 +93,26 @@ fieldset {
 	border: none;
 	padding: 0;
 	margin: 0;
+}
+
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.container {
+		max-width: 1024px;
+		padding: 0 60px;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding: 0 40px;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.container {
+		max-width: 320px;
+		padding: 0 20px;
+	}
 }

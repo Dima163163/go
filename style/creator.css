@@ -1,5 +1,6 @@
 .creator {
 	display: flex;
+	justify-content: flex-end;
 }
 
 .creator__wrapper {
@@ -19,4 +20,42 @@
 	font-size: 20px;
 	font-style: normal;
 	line-height: 28px; 
+}
+
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.creator__wrapper {
+		gap: 35px;
+	}
+
+	.creator__img {
+		width: 70px;
+		height: 70px;
+	}
+
+	.creator__text {
+		max-width: 225px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.creator__br {
+		display: none;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.creator__wrapper {
+		gap: 25px;
+		justify-content: flex-end;
+	}
+
+	.creator__text {
+		font-size: 18px;
+		line-height: 26px;
+		max-width: 225px;
+	}
+
+	.creator__br {
+		display: none;
+	}
 }

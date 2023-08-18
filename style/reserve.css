@@ -1,7 +1,6 @@
 .reserve {
 	background-color: var(--dark-purple, #440F51);
 	padding: 80px 0;
-	margin-bottom: 50px;
 }
 
 .reserve-hall {
@@ -11,6 +10,7 @@
 
 .reserve-hall__wrapper {
 	display: flex;
+	justify-content: space-between;
 	gap: 60px;
 	border: none;
 }
@@ -23,14 +23,18 @@
 	margin-bottom: 24px;
 }
 
+.reserve-form {
+	min-width: 100%;
+}
+
 .reserve-hall__title {
 	text-align: center;
 	margin-bottom: 40px;
 }
 
 .reserve-btn {
-	flex-basis: 250px;
-	flex-shrink: 0;
+	max-width: 250px;
+	width: 100%;
 	max-height: 55px;
 	padding: 7px 15px;
 	color: var(--black, #000);
@@ -42,6 +46,7 @@
 	border-radius: 8px;
 	transition-property: all;
 	transition-duration: 0.2s;
+	border: none;
 }
 
 .reserve-btn:hover {
@@ -80,8 +85,9 @@
 
 .reserve-games__wrapper {
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	gap: 100px;
+	padding-left: 100px;
 }
 
 .reserve__wrapper {
@@ -120,6 +126,7 @@
 	font-weight: 400;
 	line-height: normal;
 	padding-left: 39px;
+	min-height: 27px;
 }
 
 .reserve-games__inner::before {
@@ -170,7 +177,6 @@
 .reserve-boardgame {
 	margin-right: 12px;
 	width: 25px;
-	height: 25px;
 }
 
 .reserve-add__inner {
@@ -204,14 +210,15 @@
 	font-weight: 400;
 	line-height: normal;
 	padding-left: 39px;
+	min-height: 27px;
 }
 
 .reserve-boardgame__inner::before,
 .reserve-other__inner::before {
 	content: '';
 	display: block;
-	width: 27px;
-	height: 27px;
+	width: 25px;
+	height: 25px;
 	background-color: var(--color-white, #FFF);
 	position: absolute;
 	top: 0;
@@ -261,18 +268,27 @@
 .reserve-time__wrapper {
 	display: flex;
 	gap: 50px;
-	justify-content: space-between;
 	align-items: flex-end;
-	margin-bottom: 14px;
+	margin-bottom: 40px;
 }
 
-.reserve-time__wrapper-bottom {
-	margin-bottom: 40px;
+.reserve-time__wrapper_time {
+	display: flex;
+	gap: 36px;
+	flex-direction: column;
+	max-height: 140px;
 }
 
 .reserve-time__inner {
 	display: flex;
 	gap: 32px;
+}
+
+.reserve-time__wrapper-person {
+	display: flex;
+	gap: 14px 50px;
+	flex-wrap: wrap;
+	max-width: 630px;
 }
 
 .reserve-time__inner-time,
@@ -286,6 +302,7 @@
 .reserve-time__count-input {
 	appearance: none;
 	display: inline-block;
+	border: none;
 	width: 134px;
 	height: 52px;
 	padding: 12px 20px;
@@ -319,16 +336,27 @@
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
+	max-width: 280px;
+	width: 100%;
+	max-height: 74px;
+	flex-shrink: 1;
+}
+
+.reserve-time__inner-info_long {
+	max-width: 300px;
+	width: 100%;
 }
 
 .reserve-time__name-input,
 .reserve-time__surname-input{
-	width: 280px;
+	max-width: 280px;
+	width: 100%;
 }
 
 .reserve-time__phone-input,
 .reserve-time__email-input {
-	width: 300px;
+	max-width: 300px;
+	width: 100%;
 }
 
 .reserve-time__count-input {
@@ -387,3 +415,268 @@
 	padding: 13px 47px;
 }
 
+@media (max-width: 1439px) and (min-width: 1024px) {
+	.reserve {
+		padding: 60px 0;
+	}
+
+	.reserve-hall__title {
+		margin-bottom: 26px;
+	}
+
+	.reserve__title {
+    margin-bottom: 26px;
+	}
+
+	.reserve-form {
+    max-width: 100%;
+	}
+
+	.reserve-btn {
+		max-width: 180px;
+		max-height: 44px;
+		font-size: 20px;
+		line-height: 24px;
+		padding: 10px 20px;
+	}
+
+	.reserve-games__wrapper {
+		gap: 40px;
+		padding-left: 0;
+	}
+
+	.reserve-time__wrapper-person {
+		max-width: 554px;
+		width: 100%;
+		gap: 14px 49px;
+	}
+
+	.reserve-time__inner-info {
+		max-width: 251px;
+	}
+
+	.reserve-time__inner-info_long {
+		flex-basis: 254px;
+	}
+
+	.reserve-time__name-input,
+	.reserve-time__surname-input{
+		max-width: 251px;
+	}
+
+	.reserve-time__phone-input,
+	.reserve-time__email-input {
+		max-width: 254px;
+	}
+
+	.reserve__btn {
+		min-width: 254px;
+		height: 50px;
+		border-radius: 10px;
+		font-size: 18px;
+		line-height: 24px;
+		padding: 13px 46px;
+	}
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+	.reserve {
+		padding: 50px 0;
+	}
+
+	.reserve-hall__wrapper {
+    gap: 29px;
+	}
+
+	.reserve-games__wrapper {
+		padding-left: 0;
+		gap: 66px;
+		flex-wrap: wrap;
+	}
+
+	.reserve-btn {
+		max-width: 150px;
+		max-height: 38px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.reserve-time__wrapper {
+		flex-wrap: wrap;
+		gap: 42px;
+		margin-bottom: 48px;
+	}
+
+	.reserve-time__wrapper_time {
+		justify-content: space-between;
+		flex-direction: row;
+		min-width: 100%;
+	}
+
+	.reserve-time__inner {
+		max-width: 280px;
+		gap: 14px;
+	}
+
+	.reserve-time__wrapper-person {
+		min-width: 100%;
+		gap: 14px 106px
+	}
+
+	.reserve-games__inner {
+		min-height: 40px;
+		padding-left: 60px;
+	}
+
+	.reserve-games__inner::before {
+		width: 40px;
+		height: 40px;
+	}
+
+	.reserve-boardgame__inner::before, 
+	.reserve-other__inner::before {
+		width: 40px;
+		height: 40px;
+	}
+
+	.reserve-boardgame__inner,
+	.reserve-other__inner {
+		padding-left: 60px;
+		min-height: 40px;
+	}
+
+	.reserve-games__inner::after  {
+		width: 30px;
+		height: 30px;
+		top: 5px;
+    left: 5px;
+	}
+
+	.reserve-games__console:focus {
+		width: 46px;
+		height: 46px;
+	}
+
+	.reserve-boardgame__inner::after, .reserve-other__inner::after {
+		width: 35px;
+		height: 37px;
+	}
+
+	.reserve-boardgame__input:focus,
+	.reserve-other__input:focus {
+		width: 46px;
+		height: 46px;
+	}
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.reserve {
+		padding: 30px 0;
+	}
+
+	.reserve__title {
+		text-align: start;
+		margin-bottom: 40px;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 15px;
+	}
+
+	.reserve-games__title,
+	.reserve-time__title {
+		text-align: center;
+	}
+
+	.reserve-hall {
+		max-width: 100%;
+	}
+
+	.reserve-hall__wrapper {
+		flex-wrap: wrap;
+		gap: 14px 20px;
+	}
+
+	.reserve-btn {
+		max-width: 130px;
+		padding: 6px 20px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.reserve-games__wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-left: 0;
+    flex-direction: column;
+		max-width: 280px;
+	}
+
+	.reserve__wrapper,
+	.reserve-boardgame {
+		max-width: 280px;
+		margin: 0;
+	}
+
+	.reserve-games {
+    margin-bottom: 30px;
+	}
+
+	.reserve-games__inner::before {
+		width: 30px;
+		height: 30px;
+	}
+
+	.reserve-boardgame__inner::before, 
+	.reserve-other__inner::before {
+		width: 30px;
+		height: 30px;
+	}
+
+	.reserve-games__inner::after {
+		width: 24px;
+    height: 24px;
+	}
+
+	.reserve-time__wrapper {
+		flex-direction: column;
+		gap: 35px;
+	}
+
+	.reserve__container {
+		max-width: 280px;
+	}
+
+	.reserve-games__inner {
+		min-height: 30px;
+	}
+
+	.reserve-games__inner::before {
+		height: 30px;
+		width: 30px;
+	}
+
+	.reserve-boardgame__inner::after,
+	.reserve-other__inner::after{
+		width: 25px;
+		height: 27px;
+	}
+
+	.reserve-games__inner::after  {
+		width: 26px;
+		height: 26px;
+		top: 2px;
+    left: 2px;
+	}
+
+	.reserve-boardgame__input:focus,
+	.reserve-other__input:focus {
+		width: 36px;
+		height: 36px;
+	}
+
+	.reserve-games__console:focus {
+		width: 36px;
+		height: 36px;
+	}
+}
