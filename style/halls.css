@@ -95,7 +95,7 @@
 
 	.halls-content__list {
 		grid-template-columns: 1fr;
-		grid-template-rows: auto auto auto auto;
+		grid-template-rows: 168px 168px 168px 168px;
 		gap: 10px;
 		min-height: 702px;
 	}
