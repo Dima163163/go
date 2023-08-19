@@ -596,6 +596,7 @@
 	.reserve-hall__wrapper {
 		flex-wrap: wrap;
 		gap: 14px 20px;
+		height: 74px;
 	}
 
 	.reserve-btn {
@@ -603,6 +604,10 @@
 		padding: 6px 20px;
 		font-size: 14px;
 		line-height: 18px;
+	}
+
+	.reserve-btn:hover {
+		padding: 3px 17px;
 	}
 
 	.reserve-games__wrapper {
