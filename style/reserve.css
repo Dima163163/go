@@ -39,6 +39,7 @@
 	max-height: 55px;
 	padding: 7px 15px;
 	color: var(--black, #000);
+	background-color: var(--color-white);
 	text-align: center;
 	font-size: 30px;
 	font-weight: 700;
