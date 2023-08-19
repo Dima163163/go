@@ -594,6 +594,10 @@
 		max-width: 100%;
 	}
 
+	.reserve-hall__title  {
+		text-align: center;
+	}
+
 	.reserve-hall__wrapper {
 		flex-wrap: wrap;
 		gap: 14px 20px;
