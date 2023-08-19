@@ -85,3 +85,39 @@
 		background-image: url('../img/close.svg');
 	}
 }
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.question-content__item {
+		font-size: 14px;
+		line-height: 18px;
+		padding: 7px 13px 7px 10px;
+	}
+
+	.question-content__item:nth-of-type(even) {
+		background-color: var(--color-white);
+		color: var(--dark-light);
+	}
+
+	.question-content__item::after, 
+	.question-content__item:nth-of-type(even)::after {
+		background-image: url('../img/open320.svg');
+		max-width: 30px;
+		max-height: 30px;
+	}
+
+	.question-content__item:last-child {
+		display: none;
+	}
+
+	.question-content__item:hover::after,
+	.question-content__item:nth-of-type(even):hover::after {
+		background-image: url('../img/plus-320px.svg');
+		background-color: transparent;
+	}
+
+	.question-content__item:active::after,
+	.question-content__item:nth-of-type(even):active::after {
+		background-image: url('../img/close-320px.svg');
+		background-color: transparent;
+	}
+}

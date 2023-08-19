@@ -7,8 +7,6 @@
 
 .social__link {
 	display: block;
-	height: 50px;
-	width: 50px;
 	color: var(--color-white, #FFF);
 	outline: 1px solid transparent;
 	outline-offset: 3px;
@@ -16,26 +14,196 @@
 	transition-property: color, outline-color;
 	transition-duration: 0.3s, 0.2s;
 	transition-timing-function: ease-in-out;
-}
-
-.social__tg {
-	padding-top: 2px;
-	padding-left: 2px;
-}
-
-.social__link-icon {
-	min-width: 100%;
-	min-height: 100%;
-}
-
-.social__link:hover {
-	color: var(--pink-color, #CD06FF);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 50px;
+	height: 50px;
 }
 
 .social__link:focus {
-	outline-color: var(--pink-color, #CD06FF);
+	border: 2px solid var(--pink-color);
+	border-radius: 0;
+	width: 54px;
+	height: 54px;
 }
 
-.social__link:active {
-	color: var(--purple-saturated, #840AA3);
+.social__vk {
+	background-image: url('../img/vk.svg');
+}
+
+.social__vk:hover,
+.social__vk:focus {
+	background-image: url('../img/vk-hover.svg');
+}
+
+.social__vk:active {
+	background-image: url('../img/vk-click-active.svg');
+}
+
+.social__tg {
+	background-image: url('../img/tg-icon.svg');
+}
+
+.social__tg:hover,
+.social__tg:focus {
+	background-image: url('../img/tg-hover.svg');
+}
+
+.social__tg:active {
+	background-image: url('../img/telegram-click-active.svg');
+}
+
+.social__pinterest {
+	background-image: url('../img/pinter.svg');
+}
+
+.social__pinterest:hover,
+.social__pinterest:focus {
+	background-image: url('../img/pinterest-hover.svg');
+}
+
+.social__pinterest:active {
+	background-image: url('../img/pinterest-click-active.svg');
+}
+
+.social__stumbleupon {
+	background-image: url('../img/stumbleupon.svg');
+}
+
+.social__stumbleupon:hover,
+.social__stumbleupon:focus {
+	background-image: url('../img/stumbleupon-hover.svg');
+}
+
+.social__stumbleupon:active {
+	background-image: url('../img/stumbleupon-click-active.svg');
+}
+
+
+@media (max-width: 1439px) and (min-width: 768px) {
+	.social__link {
+		width: 40px;
+		height: 40px;
+	}
+
+	.social__link:focus {
+		width: 44px;
+		height: 44px;
+	}
+
+	.social__vk {
+		background-image: url('../img/vk1024.svg');
+	}
+
+	.social__vk:hover,
+	.social__vk:focus {
+		background-image: url('../img/vk-hover-1024.svg');
+	}
+
+	.social__vk:active {
+		background-image: url('../img/vk-active-1024.svg');
+	}
+
+	.social__tg {
+		background-image: url('../img/tg1024.svg');
+	}
+
+	.social__tg:hover,
+	.social__tg:focus {
+		background-image: url('../img/tg-hover-1024.svg');
+	}
+
+	.social__tg:active {
+		background-image: url('../img/tg-active-1024.svg');
+	}
+
+	.social__pinterest {
+		background-image: url('../img/pint1024.svg');
+	}
+
+	.social__pinterest:hover,
+	.social__pinterest:focus {
+		background-image: url('../img/pint-hover-1024.svg');
+	}
+
+	.social__pinterest:active {
+		background-image: url('../img/pint-active-1024.svg');
+	}
+
+	.social__stumbleupon {
+		background-image: url('../img/sv1024.svg');
+	}
+
+	.social__stumbleupon:hover,
+	.social__stumbleupon:focus {
+		background-image: url('../img/sv-hover-1024.svg');
+	}
+
+	.social__stumbleupon:active {
+		background-image: url('../img/sv-active-1024.svg');
+	}
+}
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.social__link {
+		width: 30px;
+		height: 30px;
+	}
+
+	.social__link:focus {
+		width: 34px;
+		height: 34px;
+	}
+
+	.social__vk {
+		background-image: url('../img/vk320.svg');
+	}
+
+	.social__vk:hover,
+	.social__vk:focus {
+		background-image: url('../img/vk-hover-320.svg');
+	}
+
+	.social__vk:active {
+		background-image: url('../img/vk-active-320.svg');
+	}
+
+	.social__tg {
+		background-image: url('../img/tg320.svg');
+	}
+
+	.social__tg:hover,
+	.social__tg:focus {
+		background-image: url('../img/tg-hover-320.svg');
+	}
+
+	.social__tg:active {
+		background-image: url('../img/tg-active-320.svg');
+	}
+
+	.social__pinterest {
+		background-image: url('../img/pint1024.svg');
+	}
+
+	.social__pinterest:hover,
+	.social__pinterest:focus {
+		background-image: url('../img/pint-hover-320.svg');
+	}
+
+	.social__pinterest:active {
+		background-image: url('../img/pint-active-320.svg');
+	}
+
+	.social__stumbleupon {
+		background-image: url('../img/sv320.svg');
+	}
+
+	.social__stumbleupon:hover,
+	.social__stumbleupon:focus {
+		background-image: url('../img/sv-hover-320.svg');
+	}
+
+	.social__stumbleupon:active {
+		background-image: url('../img/sv-active-320.svg');
+	}
 }

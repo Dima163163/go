@@ -8,3 +8,9 @@
 		padding: 35px 0;
 	}
 }
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.question {
+		padding: 15px 0;
+	}
+}

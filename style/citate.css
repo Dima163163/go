@@ -66,3 +66,37 @@
 		line-height: 36px;
 	}
 }
+
+@media (max-width: 767px) and (min-width: 320px) {
+	.citate {
+		position: relative;
+		min-width: 100%;
+		margin-bottom: 12px;
+		padding-left: 12px;
+	}
+
+	.citate__br {
+		display: none;
+	}
+
+	.citate__autor {
+		max-width: 100%;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.citate__quotes {
+		font-size: 22px;
+		line-height: 50px;
+	}
+
+	.citate__quotes-open {
+		position: absolute;
+		top: -12px;
+    left: 0px;
+	}
+
+	.citate__quotes-close {
+    bottom: 5px;
+	}
+}

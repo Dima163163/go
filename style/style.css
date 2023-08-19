@@ -19,5 +19,10 @@
 @import 'description.css';
 @import 'reserve.css';
 @import 'question.css';
+@import 'back.css';
+@import 'bg-section.css';
+@import 'room-description.css';
+@import 'room-content.css';
+@import 'other-room.css';
 
 

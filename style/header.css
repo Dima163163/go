@@ -11,7 +11,7 @@
 .heder-logo {
 	max-width: 120px;
 	width: 100%;
-	min-height: 55px;
+	min-height: 66px;
 	height: 100%;
 	background-image: url('../img/logo.svg');
 	background-repeat: no-repeat;
@@ -75,6 +75,7 @@
 	.heder-logo {
 		max-width: 87px;
 		width: 100%;
+		min-height: 55px;
 		background-image: url('../img/logo1024.svg');
 	}
 
@@ -97,6 +98,7 @@
 	.heder-logo {
 		max-width: 87px;
 		width: 100%;
+		min-height: 55px;
 		background-image: url('../img/logo1024.svg');
 	}
 
@@ -114,7 +116,6 @@
 	.header {
 		padding: 20px 0 10px;
 	}
-
 
 	.heder-logo {
 		max-width: 66px;
