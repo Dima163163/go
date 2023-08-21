@@ -165,7 +165,7 @@
 	}
 
 	.about__info {
-    display: flex;
+		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		max-width:640px;
@@ -173,7 +173,7 @@
 	}
 
 	.about__text {
-    min-width: 40%;
+		min-width: 40%;
 	}
 
 	.about-content__text {
