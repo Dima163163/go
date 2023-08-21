@@ -43,11 +43,11 @@
 
 .game-over__info-wrapper {
 	display: flex;
-  text-align: center;
-  max-width: 193px;
-  min-height: 100%;
-  flex-direction: column;
-  justify-content: space-between;
+	text-align: center;
+	max-width: 193px;
+	min-height: 100%;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .game-over__info {
@@ -174,7 +174,7 @@
 		height: 67px;
 		background-image: url('../img/btn-down-1024.svg');
 		right: 52%;
-    left: 48%;
+		left: 48%;
 		appearance: none;
 	}
 
@@ -195,7 +195,7 @@
 
 	.game-over__info {
 		margin-bottom: 80px;
-    align-items: flex-end;
+		align-items: flex-end;
 	}
 
 	.game-over__info-wrapper {
@@ -203,7 +203,7 @@
 	}
 
 	.game-over__info-number {
-    font-size: 80px;
+		font-size: 80px;
 	}
 
 	.game-over__info-text {
@@ -267,7 +267,7 @@
 	}
 
 	.game-over__info-number {
-    font-size: 50px;
+		font-size: 50px;
 	}
 
 	.game-over__info-text {
@@ -279,7 +279,68 @@
 	}
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) and (min-width: 321px) {
+	.game-over {
+		padding: 10px 0 23px;
+	}
+
+	.game-over__wrapper {
+		min-height: 204px;
+	}
+
+	.game-over__wrapper::after {
+		background-image: url('../img/go320.png');
+		max-width: 161px;
+		max-height: 179px;
+	}
+
+	.game-over__title {
+		font-size: 50px;
+		letter-spacing: -2.8px;
+		margin-bottom: 6px;
+	}
+
+	.game-over__text {
+		padding-left: 20px;
+		font-size: 18px;
+		line-height: 14px;
+		margin-bottom: 16px;
+	}
+
+	.game-over__btn-down {
+		display: none;
+	}
+
+	.game-over__info {
+		gap: 20px;
+		margin-bottom: 30px;
+	}
+
+	.game-over__info-wrapper {
+		max-width: 54px;
+	}
+
+	.game-over__info-number {
+		font-size: 26px;
+	}
+
+	.game-over__info-text {
+		font-size: 10px;
+	}
+
+	.game-over__info-new {
+		font-size: 22px;
+	}
+
+	.game-over__btn {
+		font-size: 10px;
+		line-height: 12px;
+		padding: 8px 13px;
+		border-radius: 4px;
+	}
+}
+
+@media (max-width: 320px) {
 	.game-over {
 		padding: 10px 0 23px;
 	}
@@ -321,7 +382,7 @@
 	}
 
 	.game-over__info-number {
-    font-size: 26px;
+		font-size: 26px;
 	}
 
 	.game-over__info-text {
@@ -338,6 +399,4 @@
 		padding: 8px 13px;
 		border-radius: 4px;
 	}
-
-	
 }

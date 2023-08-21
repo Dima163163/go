@@ -33,9 +33,13 @@
 }
 
 .reserve-btn {
+	display: none;
+}
+
+.reserve-hall__radio-btn-label {
+	display: block;
 	cursor: pointer;
-	max-width: 250px;
-	width: 100%;
+	width: 250px;
 	max-height: 55px;
 	padding: 7px 15px;
 	color: var(--black, #000);
@@ -51,24 +55,39 @@
 	border: none;
 }
 
-.reserve-btn:hover {
+.reserve-hall__radio-btn .reserve-btn:checked + 
+.reserve-hall__radio-btn-label {
+	border: 3px solid var(--color-white, #FFF);
+	background-color: var(--violet-color, #6C0287);
+	color: var(--color-white, #FFF);
+	padding: 4px 12px;
+}
+
+.reserve-hall__radio-btn 
+.reserve-hall__radio-btn-label:hover {
 	border: 3px solid var(--light-purple, #640AA3);
 	background: var(--grey, #EDDEED);
 	padding: 4px 12px;
 }
 
-.reserve-btn:focus {
+.reserve-hall__radio-btn 
+.reserve-hall__radio-btn-label:focus {
 	color: var(--black, #000);
 	border: 3px solid var(--light-purple, #640AA3);
 	background: var(--color-white, #FFF);
 	padding: 4px 12px;
 }
 
-.reserve-btn:active {
+.reserve-hall__radio-btn 
+.reserve-hall__radio-btn-label:active {
 	border: 3px solid var(--color-white, #FFF);
 	background-color: var(--violet-color, #6C0287);
 	color: var(--color-white, #FFF);
 	padding: 4px 12px;
+}
+
+.reserve-btn:checked {
+	background-color: #CD06FF;
 }
 
 .reserve-games {
@@ -429,14 +448,14 @@
 	}
 
 	.reserve__title {
-    margin-bottom: 26px;
+		margin-bottom: 26px;
 	}
 
 	.reserve-form {
-    max-width: 100%;
+	max-width: 100%;
 	}
 
-	.reserve-btn {
+	.reserve-hall__radio-btn {
 		max-width: 180px;
 		max-height: 44px;
 		font-size: 20px;
@@ -489,7 +508,7 @@
 	}
 
 	.reserve-hall__wrapper {
-    gap: 29px;
+		gap: 29px;
 	}
 
 	.reserve-games__wrapper {
@@ -498,7 +517,7 @@
 		flex-wrap: wrap;
 	}
 
-	.reserve-btn {
+	.reserve-hall__radio-btn-label{
 		max-width: 150px;
 		max-height: 38px;
 		font-size: 16px;
@@ -553,7 +572,7 @@
 		width: 30px;
 		height: 30px;
 		top: 5px;
-    left: 5px;
+		left: 5px;
 	}
 
 	.reserve-games__console:focus {
@@ -573,7 +592,7 @@
 	}
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) and (min-width: 321px) {
 	.reserve {
 		padding: 30px 0;
 	}
@@ -605,7 +624,7 @@
 		height: 74px;
 	}
 
-	.reserve-btn {
+	.reserve-hall__radio-btn-label {
 		max-width: 130px;
 		padding: 6px 20px;
 		font-size: 14px;
@@ -617,12 +636,13 @@
 	}
 
 	.reserve-games__wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    padding-left: 0;
-    flex-direction: column;
-		max-width: 280px;
+		display: flex;
+		justify-content: space-between;
+		gap: 25px;
+		padding-left: 0;
+		flex-direction: row;
+		width: 100%;
+		flex-wrap: wrap;
 	}
 
 	.reserve__wrapper,
@@ -632,7 +652,7 @@
 	}
 
 	.reserve-games {
-    margin-bottom: 30px;
+		margin-bottom: 30px;
 	}
 
 	.reserve-games__inner::before {
@@ -648,7 +668,185 @@
 
 	.reserve-games__inner::after {
 		width: 24px;
-    height: 24px;
+		height: 24px;
+	}
+
+	.reserve-time__wrapper {
+		flex-direction: column;
+		gap: 35px;
+	}
+
+	.reserve-time__wrapper_time {
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		min-width: 100%;
+	}
+
+	.reserve-time__wrapper-person {
+		display: flex;
+		gap: 30px;
+		flex-wrap: wrap;
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-between;
+}
+
+	.reserve__container {
+		width: 100%;
+	}
+
+	.reserve-games__inner {
+		min-height: 30px;
+	}
+
+	.reserve-games__inner::before {
+		height: 30px;
+		width: 30px;
+	}
+
+	.reserve-boardgame__inner::after,
+	.reserve-other__inner::after{
+		width: 25px;
+		height: 27px;
+	}
+
+	.reserve-games__inner::after  {
+		width: 26px;
+		height: 26px;
+		top: 2px;
+		left: 2px;
+	}
+
+	.reserve-boardgame__input:focus,
+	.reserve-other__input:focus {
+		width: 36px;
+		height: 36px;
+	}
+
+	.reserve-games__console:focus {
+		width: 36px;
+		height: 36px;
+	}
+
+	.reserve-time__inner {
+		gap: 12px;
+		min-width: 100%;
+	}
+
+	.reserve-time__input {
+		min-width: 100%;
+	}
+
+	.reserve-time__inner-time,
+	.reserve-time__inner-date {
+		min-width: 48%;
+	}
+	.reserve-time__count-input {
+		min-width: 100%;
+	}
+
+	.reserve__btn-wrapper {
+		justify-content: center;
+	}
+
+	.reserve__btn {
+		min-width: 280px;
+		padding: 17px 58px;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	.reserve-time__inner-info {
+		min-width: 100%;
+	}
+
+	.reserve-time__inner-info_long {
+		order: 1;
+		max-width: 46%;
+	}
+
+	.reserve-time__inner-info_surname {
+		margin-bottom: 29px;
+	}
+}
+
+@media (max-width: 320px) {
+	.reserve {
+		padding: 30px 0;
+	}
+
+	.reserve__title {
+		text-align: start;
+		margin-bottom: 40px;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 15px;
+	}
+
+	.reserve-games__title,
+	.reserve-time__title {
+		text-align: center;
+	}
+
+	.reserve-hall {
+		max-width: 100%;
+	}
+
+	.reserve-hall__title  {
+		text-align: center;
+	}
+
+	.reserve-hall__wrapper {
+		flex-wrap: wrap;
+		gap: 14px 20px;
+		height: 74px;
+	}
+
+	.reserve-hall__radio-btn-label {
+		max-width: 130px;
+		padding: 6px 20px;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.reserve-btn:hover {
+		padding: 3px 17px;
+	}
+
+	.reserve-games__wrapper {
+		display: flex;
+		justify-content: space-between;
+		gap: 25px;
+		padding-left: 0;
+		flex-direction: column;
+		max-width: 280px;
+	}
+
+	.reserve__wrapper,
+	.reserve-boardgame {
+		max-width: 280px;
+		margin: 0;
+	}
+
+	.reserve-games {
+		margin-bottom: 30px;
+	}
+
+	.reserve-games__inner::before {
+		width: 30px;
+		height: 30px;
+	}
+
+	.reserve-boardgame__inner::before, 
+	.reserve-other__inner::before {
+		width: 30px;
+		height: 30px;
+	}
+
+	.reserve-games__inner::after {
+		width: 24px;
+		height: 24px;
 	}
 
 	.reserve-time__wrapper {
@@ -679,7 +877,7 @@
 		width: 26px;
 		height: 26px;
 		top: 2px;
-    left: 2px;
+		left: 2px;
 	}
 
 	.reserve-boardgame__input:focus,
