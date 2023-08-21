@@ -129,7 +129,8 @@
 
 @media (max-width: 767px) and (min-width: 320px) {
 	.contacts-content__wrapper {
-		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: 35px;
 		margin-bottom: 63px;
 	}

@@ -730,6 +730,7 @@
 	}
 
 	.reserve-time__inner {
+		justify-content: space-between;
 		gap: 12px;
 		min-width: 100%;
 	}
