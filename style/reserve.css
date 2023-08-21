@@ -35,6 +35,7 @@
 .reserve-btn {
 	appearance: none;
 	position: absolute;
+	opacity: 0;
 }
 
 .reserve-hall__radio-btn-label {
