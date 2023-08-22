@@ -9,8 +9,15 @@
 	cursor: pointer;
 }
 
-.back-wrapper:hover {
+.back-wrapper:hover,
+.back-wrapper:active {
 	color: var(--pink-color);
+}
+
+.back-wrapper:focus {
+	display: inline-flex;
+	color: var(--pink-color);
+	border-bottom: 1px solid var(--pink-color);
 }
 
 .back-arrow {
@@ -21,7 +28,9 @@
 	height: 15px;
 }
 
-.back-wrapper:hover > .back-arrow {
+.back-wrapper:hover > .back-arrow,
+.back-wrapper:focus > .back-arrow,
+.back-wrapper:active > .back-arrow {
 	background-image: url('../img/back-arrow-pink.svg');
 }
 
