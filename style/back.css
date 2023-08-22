@@ -21,6 +21,10 @@
 	height: 15px;
 }
 
+.back-wrapper:hover > .back-arrow {
+	background-image: url('../img/back-arrow-pink.svg');
+}
+
 .back-text {
 	font-size: 22px;
 	line-height: 28px;
