@@ -168,7 +168,7 @@
 		justify-content: center;
 		flex-wrap: wrap;
 		max-width:640px;
-		gap: 10px;
+		gap: 0;
 	}
 
 	.about__text {
