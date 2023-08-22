@@ -604,6 +604,10 @@
 		margin-bottom: 15px;
 	}
 
+	.reserve-hall__radio-btn {
+		max-height: 30px;
+	}
+
 	.reserve-games__title,
 	.reserve-time__title {
 		text-align: center;
@@ -611,6 +615,7 @@
 
 	.reserve-hall {
 		max-width: 100%;
+		margin-bottom: 20px;
 	}
 
 	.reserve-hall__title  {
@@ -620,7 +625,7 @@
 	.reserve-hall__wrapper {
 		flex-wrap: wrap;
 		gap: 14px 20px;
-		height: 74px;
+		min-height: 30px;
 	}
 
 	.reserve-hall__radio-btn-label {
