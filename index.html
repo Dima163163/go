@@ -12,6 +12,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="style/style.css">
 	<title>Go</title>
+	<script type="module" src="js/scriprt.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -372,21 +373,51 @@
 				<div class="container">
 					<div class="content question-content">
 						<h2 class="title question-content__title">Частые вопросы</h2>
-						<ul class="question-content__list">
-							<li class="question-content__item">
-								Можно ли забронировать комнату онлайн?
+						<ul class="question-content__list accordion">
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Можно ли забронировать комнату онлайн?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Могут ли мне вернуть деньги за бронь?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Могут ли мне вернуть деньги за бронь?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Какая комната самая популярная?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Какая комната самая популярная?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Как получить VIP карту?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Как получить VIP карту?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Какая комната самая популярная?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Какая комната самая популярная?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -454,5 +485,22 @@
 				</div>
 			</div>
 	</footer>
+	<div class="form-overlay">
+		<div class="modal">
+			<button class="modal-close"></button>
+			<h1 class="modal-title">Заказать звонок</h1>
+			<form action="" class="form-modal">
+				<fieldset class="modal-inner">
+					<label for="name" class="modal-name">Имя</label>
+					<input class="modal-input" type="text" name="name" required>
+				</fieldset>
+				<fieldset class="modal-inner">
+					<label for="name" class="modal-name">Телефон</label>
+					<input class="modal-input" type="number" name="tel" >
+			</fieldset>
+			<button class="modal__btn" type="submit">Позвонить</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>
