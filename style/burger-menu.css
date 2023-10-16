@@ -19,13 +19,16 @@
   visibility: visible;
 }
 
+.burger-menu {
+  transform: translateY(-500px);
+}
+
 .burger-menu__wrapper {
   background-color: var(--dark, #1B1A1B);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 58px 0 59px;
-  transform: translateY(-500px);
 }
 
 .burger-menu__list {

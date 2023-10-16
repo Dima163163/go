@@ -1,5 +1,8 @@
 // Функция открытия закрытия меню
 const openCloseMenu = (btn, elemMenu) => {
+  document.body.style.overflow =
+    elemMenu.matches('.is-visible') ? '' : 'hidden';
+
   if (elemMenu.closest('.is-active')) {
     elemMenu.classList.remove('is-visible');
     btn.classList.toggle('header__menu_close');
@@ -47,8 +50,8 @@ const startAnimation = (duration, callback) => {
 
 // Запуск анимации
 export const animationMenu = (btn, menuWrapper) => {
-  const duration = 1500;
-  const distance = 500;
+  const duration = 700;
+  const distance = 20;
   btn.addEventListener('click', () => {
     startAnimation(duration, (progress) => {
       const bottom = progress * distance;
