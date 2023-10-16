@@ -51,11 +51,13 @@ const startAnimation = (duration, callback) => {
 // Запуск анимации
 export const animationMenu = (btn, menuWrapper) => {
   const duration = 700;
-  const distance = 20;
+  const distance = -500;
   btn.addEventListener('click', () => {
     startAnimation(duration, (progress) => {
-      const bottom = progress * distance;
+      // const open = (1 - progress) * distance;
+      const bottom = (1 - progress) * distance;
       menuWrapper.style.transform = `translateY(${bottom}px)`;
+      // menuWrapper.style.opacity = open;
     });
   });
 };
