@@ -9,6 +9,12 @@
 	text-transform: uppercase;
 }
 
+.navigation__item:hover,
+.navigation__item:active,
+.navigation__item:focus {
+	color: var(--pink-color);
+}
+
 @media (max-width: 1439px) and (min-width: 1024px) {
 	.navigation__list {
 		gap: 20px;

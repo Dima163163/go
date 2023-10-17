@@ -119,7 +119,7 @@
 	}
 
 	.contacts-content__item-adress {
-    margin-bottom: 27px;
+		margin-bottom: 27px;
 	}
 
 	.contacts-content__icon {
@@ -129,9 +129,15 @@
 
 @media (max-width: 767px) and (min-width: 320px) {
 	.contacts-content__wrapper {
-		flex-direction: column;
+		justify-content: center;
+		flex-wrap: wrap;
 		gap: 35px;
 		margin-bottom: 63px;
+	}
+
+	.contacts-content__map {
+		display: flex;
+		justify-content: center;
 	}
 
 	.contacts-content__map-image {
@@ -174,7 +180,6 @@
 		line-height: 18px;
 	}
 
-
 	.contacts-content__icon_location {
 		background-image: url('../img/location320.svg');
 	}
@@ -189,8 +194,8 @@
 
 	.contacts-content__bottom {
 		flex-direction: column;
-    align-items: center;
-    gap: 19px;
+		align-items: center;
+		gap: 19px;
 	}
 
 	.contacts-content__developers {

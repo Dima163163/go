@@ -12,6 +12,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<link rel="stylesheet" href="style/style.css">
 	<title>Go</title>
+	<script type="module" src="js/scriprt.js"></script>
 </head>
 <body>
 	<header class="header">
@@ -53,6 +54,32 @@
 			</div>
 		</div>
 	</header>
+	<div class="overlay-burger">
+		<div class="burger-menu">
+			<div class="container">
+				<div class="burger-menu__wrapper">
+					<ul class="burger-menu__list">
+						<li class="burger-menu__item">
+							<a href="#halls" class="burger-menu__link">Залы</a>
+						</li>
+						<li class="burger-menu__item">
+							<a href="#about" class="burger-menu__link">О нас</a>
+						</li>
+						<li class="burger-menu__item">
+							<a href="#reserve" class="burger-menu__link">Бронь</a>
+						</li>
+						<li class="burger-menu__item">
+							<a href="#reviews" class="burger-menu__link">Отзывы</a>
+						</li>
+						<li class="burger-menu__item">
+							<a href="#contacts" class="burger-menu__link">Контакты</a>
+						</li>
+					</ul>
+					<button class="burger-menu__btn">Заказать звонок</button>
+				</div>
+			</div>
+		</div>
+	</div>
 	<main class="main">
 		<section class="game-over">
 				<div class="container">
@@ -145,10 +172,22 @@
 							<fieldset class="reserve-hall">
 								<legend class="reserve__title reserve-hall__title">Выберите зал</legend>
 								<fieldset class="reserve-hall__wrapper">
-									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="80's vibes">
-									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="Star wars">
-									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="Wild west">
-									<input class="reserve-btn reserve-hall__input" type="submit" name="halls" value="Neon style">
+									<div class="reserve-hall__radio-btn">
+										<input class="reserve-btn reserve-hall__input" type="radio" name="radio" id="80's-vibes" value="80's vibes">
+										<label class="reserve-hall__radio-btn-label" for="80's-vibes">80's vibes</label>
+									</div>
+										<div class="reserve-hall__radio-btn">
+											<input class="reserve-btn reserve-hall__input" type="radio" name="radio" id="Star-wars" value="Star wars">
+											<label class="reserve-hall__radio-btn-label" for="Star-wars">Star wars</label>
+										</div>
+										<div class="reserve-hall__radio-btn">
+											<input class="reserve-btn reserve-hall__input" type="radio" name="radio" id="Wild-west" value="Wild west">
+											<label class="reserve-hall__radio-btn-label" for="Wild-west">Wild west</label>
+										</div>
+										<div class="reserve-hall__radio-btn">
+											<input class="reserve-btn reserve-hall__input" type="radio" name="radio" id="Neon-style" value="Neon style">
+											<label class="reserve-hall__radio-btn-label" for="Neon-style">Neon style</label>
+										</div>
 								</fieldset>
 							</fieldset>
 							<fieldset class="reserve-games">
@@ -232,7 +271,7 @@
 							<fieldset class="reserve-time reserve__container">
 								<legend class="reserve__title reserve-time__title">Выбери дату и время:</legend>
 								<fieldset class="reserve-time__wrapper">
-									<fieldset class="reserve-time__wrapper_time">
+									<fieldset class="reserve-time__wrapper-time">
 										<fieldset class="reserve-time__inner">
 											<label for="date" class="reserve-time__inner-date">
 												<input class="reserve-time__input" name="date" id="date" placeholder="Дата">
@@ -360,21 +399,51 @@
 				<div class="container">
 					<div class="content question-content">
 						<h2 class="title question-content__title">Частые вопросы</h2>
-						<ul class="question-content__list">
-							<li class="question-content__item">
-								Можно ли забронировать комнату онлайн?
+						<ul class="question-content__list accordion">
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Можно ли забронировать комнату онлайн?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Могут ли мне вернуть деньги за бронь?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Могут ли мне вернуть деньги за бронь?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Какая комната самая популярная?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Какая комната самая популярная?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Как получить VIP карту?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Как получить VIP карту?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
-							<li class="question-content__item">
-								Какая комната самая популярная?
+							<li class="question-content__item accordion__item">
+								<button class="accordion__title">
+									<p class="accordion__title-text">Какая комната самая популярная?</p>
+									<span class="accordion__btn"></span>
+								</button>
+								<div class="item__text-wrapper">
+									<p class="item__text">Да, забронировать комнату вы можете онлайн, заполнив форму на нашем сайте. Также вы можете забронировать комнату позвонив по телефону <span class="item__text-span">8 (999) 958 - 48 - 38</span></p>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -442,5 +511,22 @@
 				</div>
 			</div>
 	</footer>
+	<div class="form-overlay">
+		<div class="modal">
+			<button class="modal-close"></button>
+			<h1 class="modal-title">Заказать звонок</h1>
+			<form action="" class="form-modal">
+				<fieldset class="modal-inner">
+					<label for="name" class="modal-name">Имя</label>
+					<input class="modal-input" type="text" name="name" required>
+				</fieldset>
+				<fieldset class="modal-inner">
+					<label for="name" class="modal-name">Телефон</label>
+					<input class="modal-input" type="number" name="tel" >
+			</fieldset>
+			<button class="modal__btn" type="submit">Позвонить</button>
+			</form>
+		</div>
+	</div>
 </body>
 </html>

@@ -6,24 +6,52 @@
 	padding: 0;
 }
 
-.question-content__item {
+
+.item__text-wrapper {
+	height: 0;
+	overflow: hidden;
+	transition: height .4s ease-in-out;
+	background-color: var(--color-white, #FFF);
+}
+
+.item__text {
+	color: var(--black, #000);
+	font-size: 24px;
+	line-height: 28px;
+	padding: 57px 70px 100px;
+}
+
+.accordion__title:nth-of-type(even) .accordion__title-text {
+	color: var(--dark-purple);
+}
+
+.item__text-span {
+	font-weight: 700;
+}
+
+.accordion__item_active .item__text-wrapper {
+	height: auto;
+}
+
+.accordion__title {
 	display: flex;
+	width: 100%;
 	align-items: center;
 	justify-content: space-between;
-	background-color: var(--color-white);
-	padding: 30px 70px;
 	font-weight: 700;
 	font-size: 24px;
 	color: var(--dark-light);
 	cursor: pointer;
+	background-color: var(--color-white);
+	padding: 30px 70px;
 }
 
-.question-content__item:nth-of-type(even) {
+.accordion__item:nth-of-type(even) .accordion__title {
 	background-color: var(--dark-purple);
 	color: var(--color-white);
 }
 
-.question-content__item::after {
+.accordion__btn {
 	content: '';
 	background-image: url('../img/open-purple.svg');
 	background-position: center;
@@ -36,88 +64,207 @@
 	transition-duration: 0.2s;
 }
 
-.question-content__item:nth-of-type(even)::after {
+.accordion__item:nth-of-type(even) .accordion__btn {
 	content: '';
 	background-image: url('../img/open.svg');
 }
 
-.question-content__item:hover::after {
-	background-image: url('../img/open.svg');
+.accordion__item_active:hover .accordion__title {
+	background-color: var(--color-white);
+}
+
+.accordion__item_active:hover .item__text {
+	color: var(--dark-light, #1C1A1A);
+}
+
+.accordion__item_active:nth-of-type(even):hover .accordion__title {
+	background-color: var(--dark-purple);
+}
+
+.accordion__title_active:nth-of-type(even):hover .accordion__title-text {
+	color: var(--dark-purple);
+}
+
+.accordion__item_active:hover .accordion__title-text {
+	color: var(--dark-light, #1C1A1A);
+}
+
+.accordion__item:nth-of-type(even):hover .accordion__title-text {
+	color: var(--black, #000000);
+}
+
+.accordion__title:hover {
 	background-color: var(--dark-purple, #440F51);
+}
+
+.accordion__item:hover .item__text {
+	color: var(--black, #000000);
+}
+
+.accordion__item:hover .accordion__title {
+	color: var(--color-white, #FFF);
+}
+
+.accordion__item:nth-of-type(even):hover .accordion__title {
+	color: var(--color-white, #FFF);
+	background-color: var(--dark-purple, #440F51);
+}
+
+.accordion__item:hover .accordion__btn {
+	background-image: url('../img/open.svg');
 	border-radius: 50%;
 }
 
-.question-content__item:nth-of-type(even):hover::after {
+.accordion__item:nth-of-type(even):hover .accordion__title {
 	background-color: var(--color-white, #FFF);
+}
+
+.accordion__item:nth-of-type(even):hover .accordion__title {
+	color: var(--dark-purple, #440F51);
+}
+
+.accordion__item:nth-of-type(even):hover .accordion__btn {
 	background-image: url('../img/open-purple.svg');
 }
 
-.question-content__item:active::after {
+.accordion__item:nth-of-type(even):hover {
+	background-color: var(--color-white, #FFF);
+}
+
+.accordion__title:nth-of-type(even):hover .accordion__btn {
+	background-image: url('../img/open-purple.svg');
+}
+
+.accordion__item:active .accordion__btn {
 	background-image: url('../img/close.svg');
 }
 
-.question-content__item:nth-of-type(even):active::after {
+.accordion__item:nth-of-type(even):active .accordion__btn {
 	background-image: url('../img/close-purple.svg');
 }
 
+.accordion__item_active .accordion__btn,
+.accordion__item_active:hover .accordion__btn {
+	background-image: url('../img/close-purple.svg');
+}
+.accordion__item_active:nth-of-type(even) .accordion__btn,
+.accordion__item_active:nth-of-type(even):hover .accordion__btn {
+	background-image: url('../img/close.svg');
+}
+
+.accordion__item_active:nth-of-type(even):hover .accordion__btn {
+	background-image: url('../img/close.svg');
+}
+
+.accordion__item_active:nth-of-type(even):hover .accordion__title {
+	background-color: var(--dark-purple, #440F51);
+}
+.accordion__item_active:nth-of-type(even):hover .accordion__title-text {
+	color: var(--color-white, #FFF);
+}
 
 @media (max-width: 1439px) and (min-width: 768px) {
-	.question-content__item:nth-of-type(even) {
+	.accordion__item:nth-of-type(even) .accordion__title {
 		background-color: var(--color-white);
 		color: var(--dark-light);
 	}
-
-	.question-content__item:nth-of-type(even)::after {
-			background-image: url('../img/open-purple.svg');
+	.accordion__item:nth-of-type(even) .accordion__btn {
+		background-image: url('../img/open-purple.svg');
 	}
-
-	.question-content__item:last-child {
+	.accordion__item:last-child {
 		display: none;
 	}
-
-	.question-content__item:nth-of-type(even):hover::after {
-		background-image: url('../img/open.svg');
+	.accordion__item:nth-of-type(even):hover .accordion__title{
 		background-color: var(--dark-purple, #440F51);
-		border-radius: 50%;
 	}
-
-	.question-content__item:nth-of-type(even):active::after {
+	.accordion__item:nth-of-type(even):hover .accordion__title-text {
+		color: var(--color-white);
+	}
+	.accordion__item:nth-of-type(even):hover .accordion__btn {
+		background-image: url('../img/open.svg');
+		border-radius: 50%;
+		background-color: transparent;
+	}
+	
+	.accordion__item:nth-of-type(even):active .accordion__btn{
 		background-image: url('../img/close.svg');
+	}
+	.accordion__item_active:nth-of-type(even):hover .accordion__title {
+		background-color: var(--color-white, #FFF);
+	}
+	.accordion__item_active:nth-of-type(even):hover .accordion__title-text {
+		color: var(--black, #000000);
+	}
+	.accordion__item_active:nth-of-type(even) .accordion__btn {
+		background-image: url('../img/close-purple.svg');
+	}
+	.accordion__item_active:nth-of-type(even):hover .accordion__btn {
+		background-image: url('../img/close-purple.svg');
 	}
 }
 
 @media (max-width: 767px) and (min-width: 320px) {
-	.question-content__item {
-		font-size: 14px;
-		line-height: 18px;
+
+	.accordion__title {
 		padding: 7px 13px 7px 10px;
 	}
 
-	.question-content__item:nth-of-type(even) {
+	.accordion__title-text {
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.accordion__item:nth-of-type(even) .accordion__title {
 		background-color: var(--color-white);
 		color: var(--dark-light);
 	}
 
-	.question-content__item::after, 
-	.question-content__item:nth-of-type(even)::after {
+
+	.accordion__item .accordion__btn, 
+	.accordion__item:nth-of-type(even) .accordion__btn {
 		background-image: url('../img/open320.svg');
 		max-width: 30px;
 		max-height: 30px;
 	}
 
-	.question-content__item:last-child {
+	.accordion__item:last-child {
 		display: none;
 	}
+	.accordion__item:nth-of-type(even):hover .accordion__title{
+		background-color: var(--dark-purple, #440F51);
+	}
 
-	.question-content__item:hover::after,
-	.question-content__item:nth-of-type(even):hover::after {
+	.accordion__item:nth-of-type(even):hover .accordion__title-text {
+		color: var(--color-white);
+	}
+
+	.accordion__item:hover .accordion__btn,
+	.accordion__item:nth-of-type(even):hover .accordion__btn {
 		background-image: url('../img/plus-320px.svg');
-		background-color: transparent;
+		border: 1px solid var(--color-white);
+	}
+	.accordion__item:active .accordion__btn,
+	.accordion__item:nth-of-type(even):active .accordion__btn {
+		background-image: url('../img/close-320px.svg');
+		border: 1px solid var(--color-white);
+	}
+	.accordion__item_active:nth-of-type(even):hover .accordion__title {
+		background-color: var(--color-white, #FFF);
+	}
+	.accordion__item_active:nth-of-type(even):hover .accordion__title-text {
+		color: var(--black, #000000);
+	}
+	.accordion__item_active .accordion__btn,
+	.accordion__item_active:hover .accordion__btn {
+		background-image: url('../img/close320.svg');;
 	}
 
-	.question-content__item:active::after,
-	.question-content__item:nth-of-type(even):active::after {
-		background-image: url('../img/close-320px.svg');
-		background-color: transparent;
+	.accordion__item_active:nth-of-type(even) .accordion__btn {
+		background-image: url('../img/close320.svg');
 	}
+	.accordion__item_active:nth-of-type(even):hover .accordion__btn {
+		background-image: url('../img/close320.svg');
+	}
+
+
 }

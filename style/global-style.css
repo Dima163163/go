@@ -1,13 +1,13 @@
 html {
-  position: relative;
-  box-sizing: border-box;
+	position: relative;
+	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
@@ -15,40 +15,40 @@ body {
 	color: var(--color-white, #FFF);
 	font-weight: 400;
 	font-style: normal;
-  min-width: 320px;
-  min-height: 100vh;
+	min-width: 320px;
+	min-height: 100vh;
 	font-size: 20px;
-  font-family: Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 svg {
-  max-width: 100%;
-  height: 100%;
+	max-width: 100%;
+	height: 100%;
 }
 
 button {
-  padding: 0;
-  cursor: pointer;
-  border: none;
-  background-color: transparent;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
 	transition-duration: 0.2s;
 	transition-property: all;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+	text-decoration: none;
+	color: inherit;
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
 }
 
 h1,
@@ -57,11 +57,11 @@ h3,
 p,
 figure,
 fieldset {
-  margin: 0;
+	margin: 0;
 }
 
 iframe {
-  border: none;
+	border: none;
 }
 
 /*
@@ -69,8 +69,8 @@ iframe {
 */
 
 .visually-hidden {
-  position: fixed;
-  transform: scale(0);
+	position: fixed;
+	transform: scale(0);
 }
 
 
@@ -84,9 +84,9 @@ iframe {
 */
 
 .container {
-  max-width: 1440px;
-  padding: 0 130px;
-  margin: 0 auto;
+	max-width: 1440px;
+	padding: 0 130px;
+	margin: 0 auto;
 }
 
 fieldset {
@@ -137,7 +137,24 @@ fieldset {
 	}
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) and (min-width: 321px) {
+	.container {
+		max-width: 640px;
+		padding: 0 20px;
+	}
+	
+	.section-page {
+		padding: 15px 0;
+	}
+
+	.page-title {
+		font-size: 20px;
+		line-height: 36px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 320px) {
 	.container {
 		max-width: 320px;
 		padding: 0 20px;

@@ -9,12 +9,29 @@
 	cursor: pointer;
 }
 
+.back-wrapper:hover,
+.back-wrapper:active {
+	color: var(--pink-color);
+}
+
+.back-wrapper:focus {
+	display: inline-flex;
+	color: var(--pink-color);
+	border-bottom: 1px solid var(--pink-color);
+}
+
 .back-arrow {
 	background-image: url('../img/back-arrow.svg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 30px;
 	height: 15px;
+}
+
+.back-wrapper:hover > .back-arrow,
+.back-wrapper:focus > .back-arrow,
+.back-wrapper:active > .back-arrow {
+	background-image: url('../img/back-arrow-pink.svg');
 }
 
 .back-text {

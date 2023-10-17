@@ -77,7 +77,41 @@
 	}
 }
 
-@media (max-width: 767px) and (min-width: 320px) {
+@media (max-width: 767px) and (min-width: 321px) {
+	.creator {
+		max-width: 100%;
+	}
+
+	.creator__wrapper {
+		min-width: 100%;
+		justify-content: center;
+		gap: 11px;
+	}
+
+	.creator__img {
+		background-image: url('../img/creator320.png');
+		max-width: 56px;
+		width: 100%;
+		max-height: 56px;
+		height: 100%;
+	}
+
+	.creator__text {
+		font-size: 12px;
+		line-height: 16px;
+		max-width: 213px;
+	}
+
+	.creator__br {
+		display: none;
+	}
+
+	.creator__br-first {
+		display: block;
+	}
+}
+
+@media (max-width: 767px) and (max-width: 320px) {
 	.creator__wrapper {
 		gap: 11px;
 	}
