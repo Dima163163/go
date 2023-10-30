@@ -16,16 +16,17 @@
 .slider-button-next {
 	cursor: pointer;
 	position: absolute;
-	top: 200px;
+	top: calc(50% - 16.5px);
 	right: 0;
-	z-index: 30;
+	z-index: 2;
 }
 
 .slider-button-prev {
 	cursor: pointer;
 	position: absolute;
-	top: 200px;
+	top: calc(50% - 16.5px);
 	left: 0;
+	z-index: 2;
 }
 
 .reviews__inner-image {
