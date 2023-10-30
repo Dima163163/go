@@ -10,8 +10,17 @@
 	<link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="theme-color" content="#ffffff">
+		<link
+  rel="stylesheet"
+  href="style/swiper-bundle.min.css"
+	/>
 	<link rel="stylesheet" href="style/style.css">
 	<title>Go</title>
+
+	<script src="js/swiper-bundle.min.js"></script>
+	<script defer src="js/jquery-3.7.1.min.js"></script>
+	<script defer src="js/inputmask.min.js"></script>
+	<script defer src="js/just-validate.production.min.js"></script>
 	<script type="module" src="js/scriprt.js"></script>
 </head>
 <body>
@@ -367,24 +376,24 @@
 		</section>
 		<section class="section reviews" id="reviews">
 			<div class="container">
-				<div class="content reviews-content">
+				<div class="swiper content reviews-content">
 					<h2 class="title reviews__title">Отзывы посетилелей</h2>
-					<div class="reviews__wrapper">
-						<div class="reviews__inner">
+					<div class="swiper-wrapper reviews__wrapper ">
+						<div class="swiper-slide reviews__inner">
 							<div class="reviews__inner-image">
 								<div class="reviews__inner-img reviews__inner-img_maks"></div>
 								<p class="reviews__inner-name">Макс Самойлов</p>
 							</div>
 							<p class="reviews__inner-text">Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении.Серивис на высоте!</p>
 						</div>
-						<div class="reviews__inner">
+						<div class="swiper-slide reviews__inner">
 							<div class="reviews__inner-image">
 								<div class="reviews__inner-img reviews__inner-img_oksana"></div>
 								<p class="reviews__inner-name">Оксана Григорьева</p>
 							</div>
 							<p class="reviews__inner-text">Были в комнате дикий запад, пели в караоке под Шакиру, отличный получился корпоратив! У нас в городе больше нет подобных заведений.</p>
 						</div>
-						<div class="reviews__inner">
+						<div class="swiper-slide reviews__inner">
 							<div class="reviews__inner-image">
 								<div class="reviews__inner-img reviews__inner-img_nikita"></div>
 								<p class="reviews__inner-name">Никита Ященко</p>
@@ -392,6 +401,18 @@
 							<p class="reviews__inner-text">Немного подвисала игра в vr очках, а так все норм. Кру тое оформление комнаты в стиле звездных воин, попал в атмосферу космоса.</p>
 						</div>
 					</div>
+						<div class="slider-button-prev">
+							<svg width="34" height="66" viewBox="0 0 34 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M32.5269 0L33.9411 1.41421L1.41422 33.9411L5.126e-06 32.5269L32.5269 0Z" fill="#6C0287"/>
+								<path d="M5.126e-06 32.5269L1.41422 31.1127L33.9411 63.6396L32.5269 65.0538L5.126e-06 32.5269Z" fill="#6C0287"/>
+							</svg>
+						</div>
+						<div class="slider-button-next">
+							<svg width="35" height="66" viewBox="0 0 35 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.52686 0L0.112642 1.41421L32.6396 33.9411L34.0538 32.5269L1.52686 0Z" fill="#6C0287"/>
+								<path d="M34.0538 32.5269L32.6396 31.1127L0.112642 63.6396L1.52686 65.0538L34.0538 32.5269Z" fill="#6C0287"/>
+							</svg>
+						</div>
 				</div>
 			</div>
 		</section>
@@ -518,11 +539,11 @@
 			<form action="" class="form-modal">
 				<fieldset class="modal-inner">
 					<label for="name" class="modal-name">Имя</label>
-					<input class="modal-input" type="text" name="name" required>
+					<input class="modal-input modal-input-name" type="text" name="name" required>
 				</fieldset>
 				<fieldset class="modal-inner">
 					<label for="name" class="modal-name">Телефон</label>
-					<input class="modal-input" type="number" name="tel" >
+					<input class="modal-input modal-input-tel" type="tel" name="tel" data-validate-field="tel">
 			</fieldset>
 			<button class="modal__btn" type="submit">Позвонить</button>
 			</form>

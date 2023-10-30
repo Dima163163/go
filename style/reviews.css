@@ -1,7 +1,7 @@
 .reviews__wrapper {
 	display: flex;
-	flex-direction: column;
-	gap: 50px;
+	/* flex-direction: column; */
+	/* gap: 50px; */
 	max-width: 980px;
 	margin: 0 auto;
 	padding: 0;
@@ -10,6 +10,22 @@
 .reviews__inner {
 	display: flex;
 	gap: 20px;
+	width: 100%;
+}
+
+.slider-button-next {
+	cursor: pointer;
+	position: absolute;
+	top: 200px;
+	right: 0;
+	z-index: 30;
+}
+
+.slider-button-prev {
+	cursor: pointer;
+	position: absolute;
+	top: 200px;
+	left: 0;
 }
 
 .reviews__inner-image {
@@ -47,6 +63,7 @@
 }
 
 .reviews__inner-text {
+	max-width: 680px;
 	padding-top: 52px;
 	line-height: 28px; 
 }

@@ -7,6 +7,8 @@ const accTextWrapper = document.querySelectorAll('.item__text-wrapper');
 const burgerMenuOverlay = document.querySelector('.overlay-burger');
 const btnBurger = document.querySelector('.header__menu');
 const burgerMenu = document.querySelector('.burger-menu');
+const modalInputName = document.querySelector('.modal-input-name');
+const modalInputTel = document.querySelector('.modal-input-tel');
 
 export default {
   btnOpenModal,
@@ -18,4 +20,6 @@ export default {
   btnBurger,
   burgerMenuOverlay,
   burgerMenu,
+  modalInputName,
+  modalInputTel,
 };

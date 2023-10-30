@@ -32,7 +32,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  animation: molalAnimate 6s forwards;
+  animation: molalAnimate 2s forwards;
   padding: 60px 150px 80px;
   max-width: 600px;
   width: 100%;
